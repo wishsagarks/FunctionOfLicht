@@ -1,0 +1,72 @@
+.header {
+  display: flexbox;
+  height: 25vh;
+  margin: 0px 0px;
+  
+}
+.logo{
+  height: 10vh;
+  width: 10vh;
+}
+.main {
+  display: flex;
+  height: 62vh;
+
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(180deg, #ACACAC 0%, #FFFFFF 79.69%);
+}
+
+.footer {
+  display: flex;
+  height: 10vh;
+}
+
+ion-icon:hover {
+  color: black;
+}
+
+ion-icon {
+  font-size: 20px;
+  margin: 0vh 0vw;
+  padding: 1vh 1vw;
+  color: gray;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.socialmedia li {
+  list-style: none;
+}
+.socialmedia ul {
+  float: right;
+  margin: 0vh 0vw;
+  padding: 0vh 1vw;
+}
+
+.logo {
+  width: 15vw;
+  height: 15vh;
+}
+
+.download {
+  align-self: flex-end;
+  margin: 0vh 46vw;
+  padding: 3vh 1vw;
+}
+.buttons button {
+  margin: 0vh 3vw;
+  height: 8vh;
+  width: 8vw;
+}
+.slider {
+  background-color: bisque;
+  width: 80vw;
+}
+.carousel-inner {
+  height: 60vh;
+  margin: 0vh 3vw;
+  padding: 0vh 3vw;
+  justify-self: center;
+}
