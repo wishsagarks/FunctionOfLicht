@@ -2,25 +2,31 @@
   display: flexbox;
   height: 25vh;
   margin: 0px 0px;
-  
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-.logo{
-  height: 10vh;
-  width: 10vh;
-}
+.div1{
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(0deg, #FFFFFF 3.01%, #F9F9F9 3.97%, #C5C5C5 11.67%, #969696 19.38%, #6E6E6E 28.04%, #4C4C4C 36.71%, #303030 45.37%, #1B1B1B 55.96%, #0C0C0C 66.55%, #030303 80.03%, #000000 99.28%);
+  transform: rotate(180deg);
+  }
 .main {
   display: flex;
-  height: 62vh;
+  height: 45vh;
 
   justify-content: center;
   align-items: center;
   justify-content: space-evenly;
-  background: linear-gradient(180deg, #ACACAC 0%, #FFFFFF 79.69%);
+  
+  background-color: black;
 }
 
 .footer {
-  display: flex;
-  height: 10vh;
+  display:inline-block;
+  height: 30vh;
+  background: linear-gradient(0deg, #FFFFFF 3.01%, #F9F9F9 3.97%, #C5C5C5 11.67%, #969696 19.38%, #6E6E6E 28.04%, #4C4C4C 36.71%, #303030 45.37%, #1B1B1B 55.96%, #0C0C0C 66.55%, #030303 80.03%, #000000 99.28%);
+  width: 100%;
 }
 
 ion-icon:hover {
@@ -38,6 +44,7 @@ ion-icon {
 
 .socialmedia li {
   list-style: none;
+  display: inline-block;
 }
 .socialmedia ul {
   float: right;
@@ -45,10 +52,7 @@ ion-icon {
   padding: 0vh 1vw;
 }
 
-.logo {
-  width: 15vw;
-  height: 15vh;
-}
+
 
 .download {
   align-self: flex-end;
@@ -70,3 +74,4 @@ ion-icon {
   padding: 0vh 3vw;
   justify-self: center;
 }
+
