@@ -1,117 +1,10 @@
-.menu{
-  
-}
-
-.header {
-  display: flexbox;
-  height: 25vh;
-  margin: 0px 0px;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Poppins', sans-serif;
-}
-.div1{
-  height: 50vh;
-  width: 100%;
-  background: linear-gradient(0deg, #FFFFFF 3.01%, #F9F9F9 3.97%, #C5C5C5 11.67%, #969696 19.38%, #6E6E6E 28.04%, #4C4C4C 36.71%, #303030 45.37%, #1B1B1B 55.96%, #0C0C0C 66.55%, #030303 80.03%, #000000 100%);
-  transform: rotate(180deg);
-z-index: 1000;
-
-  
-  }
-  .div2{
-
-width: 100%;
-background-color: #000000;
-height: 60vh;
-margin-top: -1px;
-
-  }
- .box{
-
-  width: 100%;
-padding-right: 10vh; 
-}
-.footer {
-  display:inline-block;
-  height: 40vh;
-  background: linear-gradient(0deg, #FFFFFF 3.01%, #F9F9F9 3.97%, #C5C5C5 11.67%, #969696 19.38%, #6E6E6E 28.04%, #4C4C4C 36.71%, #303030 45.37%, #1B1B1B 55.96%, #0C0C0C 66.55%, #030303 80.03%, #000000 99.28%);
-  width: 100%;
-}
-
-ion-icon:hover {
-  color: black;
-}
-
-ion-icon {
-  font-size: 20px;
-  margin: 0vh 0vw;
-  padding: 1vh 1vw;
-  color: gray;
-  transition: 0.2s;
-  text-decoration: none;
-}
-
-.socialmedia li {
-  list-style: none;
-  display: inline-block;
-}
-.socialmedia ul {
-  float: right;
-  margin: 0vh 0vw;
-  padding: 0vh 1vw;
-}
-
-
-
-.download {
-  align-self: flex-end;
-  margin: 0vh 46vw;
-  padding: 3vh 1vw;
-}
-.buttons button {
-  margin: 0vh 3vw;
-  height: 8vh;
-  width: 8vw;
-}
-.slider {
-  background-color: bisque;
-  width: 80vw;
-}
-.carousel-inner {
-  height: 60vh;
-  margin: 0vh 3vw;
-  padding: 0vh 3vw;
-  justify-self: center;
-}
-.button {
-  background-color: white; /* Green */
-  border: none;
-  color: black;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-.button4 { border-radius: 6px; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px;text-decoration: none;color: #000000; }
-
-/* page-3 */
-.page-3slider{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
- 
-
 }
-.box2{
-  background-color: #000000;
-  height: 60vh;
-  margin-top: -1px;
-  z-index: 999999;
 
-}
+
 .visuallyhidden {
   position: absolute;
   z-index: -1;
@@ -125,7 +18,7 @@ ion-icon {
 .container {
   overflow: hidden;
   padding: 20px;
-  
+  margin-top: 2em;
   background:black;
 }
 
