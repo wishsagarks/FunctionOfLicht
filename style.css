@@ -1,4 +1,10 @@
-
+.main{
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  background-color: #000000;
+  margin-top: -1px;
+}
 .header {
   display: flexbox;
   height: 25vh;
@@ -65,13 +71,16 @@ ion-icon {
   padding: 0vh 1vw;
 }
 
-
-
-.download {
-  align-self: flex-end;
-  margin: 0vh 46vw;
-  padding: 3vh 1vw;
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
+
 .buttons button {
   margin: 0vh 3vw;
   height: 8vh;
@@ -87,8 +96,8 @@ ion-icon {
   padding: 0vh 3vw;
   justify-self: center;
 }
-.button {
-  background-color: white; /* Green */
+/* .button {
+  background-color: white;
   border: none;
   color: black;
   padding: 10px;
@@ -98,9 +107,51 @@ ion-icon {
   font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
+} */
+.btn {
+  padding: 1em 2.1em 1.1em;
+  border-radius: 3px;
+  margin: 8px 8px 8px 8px;
+  color: #fbdedb;
+  background-color: #fbdedb;
+  display: inline-block;
+  background: #e74c3c;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: .85em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+  position: relative;
 }
-.button4 { border-radius: 6px; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px;text-decoration: none;color: #000000; }
+.btn:hover, .btn:focus {
+  opacity: 0.8;
+}
+.btn:active {
+  -webkit-transform: scale(0.80);
+  -moz-transform: scale(0.80);
+  -ms-transform: scale(0.80);
+  -o-transform: scale(0.80);
+  transform: scale(0.80);
+}
+.btn.block {
+  display: block !important;
+}
+.btn.circular {
+border-radius: 50em !important;
+}
 
+.gray {
+  color: black;
+  background-color: #d2d2d2;
+}
 /* page-3 */
 .page-3slider{
   box-sizing: border-box;
