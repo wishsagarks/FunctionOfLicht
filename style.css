@@ -17,7 +17,10 @@
 .div2 {
   background-color: #000000;
 }
-
+.division2{
+  background-color: #000000;
+  opacity: 0.2;
+}
 .box {
   width: 90%;
   margin: 0 auto;
@@ -31,6 +34,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
+  opacity: 0.5;
 }
 
 .navbar-toggler{
