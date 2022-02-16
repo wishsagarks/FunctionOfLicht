@@ -66,7 +66,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .navbar-toggler {
@@ -576,6 +576,18 @@ ion-icon {
 }
 .btn btn-primary {
   background-color: #33383b;
+}
+.bu {
+  background-color: #1e201e; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .carousel-item {
