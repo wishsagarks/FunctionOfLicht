@@ -937,9 +937,10 @@ ion-icon {
    margin-left: 0;
  }
 }
-
-
-
+.comingsoon{
+  margin: -1rem;
+  width: 100%;
+}
 
 
 
