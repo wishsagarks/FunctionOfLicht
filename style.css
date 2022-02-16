@@ -29,13 +29,15 @@
 
 .div2 {
   background-color: #000000;
+  margin: -1rem auto;
 }
 .division2 {
   background-color: #000000;
+  margin: -1rem auto;
 }
 .box {
   width: 90%;
-  margin: 0 auto;
+  margin: -1rem auto;
   position: relative;
 }
 
@@ -557,7 +559,7 @@ ion-icon {
 
 .carousel-item {
   height: 100%;
-  width: 95%;
+  width: 100%;
   object-fit: cover;
 }
 .carousel-item > img {
@@ -568,16 +570,17 @@ ion-icon {
 }
 
 .carousel-inner {
-  height: 25rem;
-  margin-left: 2rem;
+  height: 23rem;
+  margin: auto;
+  width: 85%;
 }
 .carousel-control-prev {
   width: 5%;
-  margin-left: 7rem;
+  margin-left: 10rem;
 }
 .carousel-control-next {
   width: 5%;
-  margin-right: 7rem;
+  margin-right: 10rem;
 }
 @media screen and (max-width: 1080px) {
   .carousel-inner {
