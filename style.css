@@ -125,8 +125,10 @@ ion-icon {
   position: absolute;
   top: 50%;
   left: 50%;
+  height: 4rem;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  width: 4rem;
 }
 
 .buttons button {
@@ -609,11 +611,21 @@ ion-icon {
 }
 .carousel-control-prev {
   width: 5%;
-  margin-left: 10rem;
+  margin-left: 7rem;
 }
 .carousel-control-next {
   width: 5%;
-  margin-right: 10rem;
+  margin-right: 7rem;
+}
+@media screen and (max-width: 500px) {
+  .carousel-control-prev {
+    margin-left: 3rem;
+    width: 5%;
+  }
+  .carousel-control-next {
+    margin-right: 3rem;
+    width: 5%;
+  }
 }
 @media screen and (max-width: 1080px) {
   .carousel-inner {
@@ -687,6 +699,7 @@ ion-icon {
   font-weight: 400;
   text-decoration: none;
   color: inherit;
+  font-size: 0.85rem;
 }
 
 .footer-distributed .footer-company-name {
@@ -966,12 +979,12 @@ ion-icon {
   }
 }
 
-.btr{
-
-    display:block;
- 
-    border-radius: 50%;
-    
-    
+.btr {
+  display: block;
+  position: relative;
+  right: 0.3rem;
+  border-radius: 50%;
+  width: 1rem;
+  height: 3rem;
 }
 /* /// */
