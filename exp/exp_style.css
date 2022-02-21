@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -61,4 +61,29 @@ body {
 .main .container .swiper-container .swiper-button-prev .arrow-icon {
   font-size: 2rem;
   color: #ffffff;
+} */
+
+.swiper-container {
+  padding-bottom: 67px!important;
+}
+.swiper-container .swiper-slide img{
+   width: 400px;
+   height: 300px;
+}
+
+.swiper-container .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-button-next i {
+  display: none;
+}
+
+.swiper-button-next i {
+  display: none;
+}
+
+.swiper-button-prev i {
+  display: none;
 }
