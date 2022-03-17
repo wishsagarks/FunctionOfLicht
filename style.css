@@ -656,9 +656,9 @@ ion-icon {
 }
 
 .carousel-inner {
-  height: 23rem;
+  height: 25rem;
   margin: auto;
-  width: 85%;
+  width: 103%;
 }
 .carousel-control-prev {
   width: 5%;
