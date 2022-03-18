@@ -660,9 +660,12 @@ ion-icon {
   margin: auto;
   width: 103%;
 }
+.carousel-indicators {
+  left: 1.5em;
+}
 .carousel-control-prev {
   width: 5%;
-  margin-left: 7rem;
+  margin-left: 8rem;
 }
 .carousel-control-next {
   width: 5%;
@@ -678,9 +681,14 @@ ion-icon {
     width: 5%;
   }
 }
+.carousel-inner {
+  height: 12rem;
+  width: 98%;
+}
 @media screen and (max-width: 1080px) {
   .carousel-inner {
     height: 20rem;
+    width: 66%;
   }
   .box {
     width: 95%;
@@ -688,7 +696,9 @@ ion-icon {
 }
 @media screen and (max-width: 768px) {
   .carousel-inner {
-    height: 15rem;
+    height: 12rem;
+    width: 98%;
+    margin-left: 0.5em;
   }
   .box {
     width: 98%;
