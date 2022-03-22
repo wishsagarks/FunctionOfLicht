@@ -660,6 +660,7 @@ ion-icon {
   margin: auto;
   width: 103%;
 }
+
 .carousel-indicators {
   left: 1.5em;
 }
@@ -682,12 +683,12 @@ ion-icon {
   }
 }
 .carousel-inner {
-  height: 12rem;
-  width: 98%;
+  height: -1rem;
+  width: 86%;
 }
 @media screen and (max-width: 1080px) {
   .carousel-inner {
-    height: 20rem;
+    height: 16rem;
     width: 66%;
   }
   .box {
