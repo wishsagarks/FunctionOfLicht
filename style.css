@@ -1045,8 +1045,12 @@ ion-icon {
   display: block;
   position: relative;
   right: 0.3rem;
-  border-radius: 50%;
-  width: 1rem;
-  height: 3rem;
+  border-radius: 100%;
+  /* width: 40%;
+  height:40%; */
+  width:max-content;
+  padding: 1rem;
+  /* width: 1rem;
+  height: 3rem; */
 }
 /* /// */
