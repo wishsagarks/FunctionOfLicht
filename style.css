@@ -145,6 +145,14 @@
   );
   width: 100%;
 }
+.foot-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  background: #2a2730;
+  width: 100%;
+}
 
 ion-icon {
   color: rgb(0, 0, 0);
@@ -1054,3 +1062,23 @@ ion-icon {
   height: 3rem; */
 }
 /* /// */
+
+
+/* SERVICES PAGE CSS STARTS HERE*/
+
+.services-wrapper{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10%;
+  position:inherit;
+  background-color: #2a2730
+  ;
+  color:#fff;
+}
+
+.services-wrapper>h2{
+  align-items: flex-start;
+}
+/* SERVICES PAGE CSS ENDS HERE */

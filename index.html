@@ -22,9 +22,10 @@
     transform:scale(1.4);
   }
   .whatsapp-button{
-    position:absolute; 
-    top:115%;
-    right:7%;  
+      position:fixed;
+      right:20%;
+      /* bottom:30%; */
+      z-index: 400;
     /* display:inline; */
     background-color: transparent;
     width:max-content;
@@ -641,7 +642,6 @@
 
   <div class="whatsapp-button">
     <button>
-      
       <i class="fa-brands fa-whatsapp fa-2x" style="margin-right: 10px;color:#fff"></i> 
       <span style="color:rgb(0,0,0);font-weight:bold;">WhatsApp</span>
     </button>
@@ -747,6 +747,11 @@
   whatsappButton.addEventListener('click',()=>{
     window.open('https://wa.me/919874209695')
   })
+
+  const winHeight=window.innerHeight;
+  const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+  console.log
+  whatsappButton.style.bottom=`${vh-600}px`
 </script>
 
 </html>
