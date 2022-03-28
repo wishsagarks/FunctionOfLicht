@@ -28,7 +28,100 @@
     }
     .services-wrapper{
         font-size:1.2rem;
+        overflow-x: auto;
+        padding: 30%;
     }
+  
+
+     table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  color:#000;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+  color:#000;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+  color:#000;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+    color:#000;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    /* font-weight: bold; */
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+    font-weight: bold;
+    
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
 </style>
 
 <body>
@@ -201,8 +294,8 @@
             may not yield the most optimal solution that you may realize with the ‘Pre-eminent’ or
             ‘Eminent’ pack, but indeed it will ensure THE BEST VALUE  for your money!
         </p>
-        <div class="table-container table-responsive" style="margin-top:10%;padding:50px;">
-            <table class="table table-bordered table-striped " style="padding:30px;color:#fff;">
+        <div >
+            <!-- <table class="table table-bordered table-striped " style="color:#000">
                 <thead style="margin-right: 100px;padding:20px;">
                   <tr >
                     <th scope="col">Services</th>
@@ -213,90 +306,188 @@
                   </tr>
                 </thead>
                 <tbody class="table-hover">
-                  <tr style="color:#fff;">
-                    <th style="color:#fff;" scope="row">Personalized Lighting Solution</th>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i></td>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i></td>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i></td>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i></td>
+                  <tr style="color:#000">
+                    <th style="color:#000" scope="row">Personalized Lighting Solution</th>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i></td>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i></td>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i></td>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i></td>
                     
                   </tr>
                   <tr>
-                    <th style="color:#fff;" scope="row">Comprehensive Suggestions</th>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i>
+                    <th style="color:#000" scope="row">Comprehensive Suggestions</th>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i>
                   </tr>
                   <tr>
-                    <th style="color:#fff;" scope="row">Aestheticism</th>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i></td>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i></td>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i></td>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i></td>
+                    <th style="color:#000" scope="row">Aestheticism</th>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i></td>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i></td>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i></td>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i></td>
                   </tr>
                   <tr>
-                    <th style="color:#fff;" scope="row">Minimalisation</th>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i>
+                    <th style="color:#000" scope="row">Minimalisation</th>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i>
                   </tr>
                   <tr>
-                    <th style="color:#fff;" scope="row">Architectural Optimisation</th>
-                    <td style="color:#fff;">Complete</td>
-                    <td style="color:#fff;">Limited</td>
+                    <th style="color:#000" scope="row">Architectural Optimisation</th>
+                    <td style="color:#000">Complete</td>
+                    <td style="color:#000">Limited</td>
                     <td><i style="color:red;" class="large material-icons">clear</i></td>
                     <td><i style="color:red;" class="large material-icons">clear</i></td>
                   </tr>
                   <tr>
-                    <th style="color:#fff;" scope="row">Exploration of the State of Art Research</th>
+                    <th style="color:#000" scope="row">Exploration of the State of Art Research</th>
                     <td>Extensive</td>
                     <td>Moderate</td>
                     <td>Minimal</td>
                     <td><i style="color:red;" class="large material-icons">clear</i></td>
                   </tr>
                   <tr>
-                    <th style="color:#fff;" scope="row">Assurance of Power Saving</th>
-                    <td style="color:#fff;">Best</td>
-                    <td style="color:#fff;">Best</td>
-                    <td style="color:#fff;">High</td>
-                    <td style="color:#fff;">Moderate</td>
+                    <th style="color:#000" scope="row">Assurance of Power Saving</th>
+                    <td style="color:#000">Best</td>
+                    <td style="color:#000">Best</td>
+                    <td style="color:#000">High</td>
+                    <td style="color:#000">Moderate</td>
                   </tr>
                   <tr>
-                    <th style="color:#fff;" scope="row">Day Light Interaction</th>
+                    <th style="color:#000" scope="row">Day Light Interaction</th>
                     <td>Guaranteed</td>
                     <td>Actuated</td>
                     <td>On-Demand</td>
                     <td>On-Demand</td>
                   </tr>
                   <tr>
-                    <th style="color:#fff;" scope="row">Human Centric Lighting</th>
-                    <td style="color:#fff;">Guaranteed</td>
-                    <td style="color:#fff;">Actuated</td>
-                    <td style="color:#fff;">On-Demand</td>
-                    <td style="color:#fff;">On-Demand</td>
+                    <th style="color:#000" scope="row">Human Centric Lighting</th>
+                    <td style="color:#000">Guaranteed</td>
+                    <td style="color:#000">Actuated</td>
+                    <td style="color:#000">On-Demand</td>
+                    <td style="color:#000">On-Demand</td>
                   </tr>
                   <tr>
-                    <th style="color:#fff;" scope="row">4-D Illusory</th>
+                    <th style="color:#000" scope="row">4-D Illusory</th>
                     <td>Guaranteed</td>
                     <td>Actuated</td>
                     <td>On-Demand</td>
                     <td>On-Demand</td>
                   </tr>
                   <tr>
-                    <th style="color:#fff;" scope="row">Stock Survey for Price Minimization</th>
-                    <td style="color:#fff;">Meticulous</td>
-                    <td style="color:#fff;">Extensive</td>
-                    <td style="color:#fff;">Thorough</td>
-                    <td style="color:#fff;">Swift</td>
+                    <th style="color:#000" scope="row">Stock Survey for Price Minimization</th>
+                    <td style="color:#000">Meticulous</td>
+                    <td style="color:#000">Extensive</td>
+                    <td style="color:#000">Thorough</td>
+                    <td style="color:#000">Swift</td>
                   </tr>
                   <tr>
-                    <th style="color:#fff;" scope="row">After Completion Consultancy</th>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i>
-                    <td style="color:lightgreen;"><i class="large material-icons">check</i>
+                    <th style="color:#000" scope="row">After Completion Consultancy</th>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i>
+                    <td style="color:darkgreen;"><i class="large material-icons">check</i>
+                  </tr>
+                </tbody>
+              </table> -->
+
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Services</th>
+                    <th scope="col">Pre-Eminent</th>
+                    <th scope="col">Eminent</th>
+                    <th scope="col">Congruent</th>
+                    <th scope="col">Decent</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color:#000" scope="row">Personalized Lighting Solution</th>
+                    <td  data-label="Pre-Eminent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                    <td data-label="Eminent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                    <td data-label="Congruent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                    <td data-label="Decent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                  </tr>
+                  <tr>
+                    <td style="color:#000" scope="row">Comprehensive Suggestions</th>
+                    <td  data-label="Pre-Eminent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></i>
+                    <td data-label="Eminent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></i>
+                    <td data-label="Congruent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></i>
+                    <td data-label="Decent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></i>
+                  </tr>
+                  <tr>
+                    <td style="color:#000" scope="row">Aestheticism</th>
+                      <td  data-label="Pre-Eminent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                      <td data-label="Eminent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                      <td data-label="Congruent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                      <td data-label="Decent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                  </tr>
+                  <tr>
+                    <td style="color:#000" scope="row">Minimalisation</th>
+                    <td  data-label="Pre-Eminent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                    <td data-label="Eminent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                    <td data-label="Congruent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                    <td data-label="Decent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                  </tr>
+                  <tr>
+                    <td style="color:#000" scope="row">Architectural Optimisation</th>
+                    <td  data-label="Pre-Eminent" style="color:#000">Complete</td>
+                    <td data-label="Eminent" style="color:#000">Limited</td>
+                    <td data-label="Congruent"><i style="color:red;" class="large material-icons">clear</i></td>
+                    <td data-label="Decent"><i style="color:red;" class="large material-icons">clear</i></td>
+                  </tr>
+                  <tr>
+                    <td style="color:#000" scope="row">Exploration of the State of Art Research</th>
+                    <td data-label="Pre-Eminent" >Extensive</td>
+                    <td data-label="Eminent">Moderate</td>
+                    <td data-label="Congruent">Minimal</td>
+                    <td data-label="Decent"><i style="color:red;" class="large material-icons">clear</i></td>
+                  </tr>
+                  <tr>
+                    <td style="color:#000" scope="row">Assurance of Power Saving</th>
+                    <td  data-label="Pre-Eminent" style="color:#000">Best</td>
+                    <td data-label="Eminent" style="color:#000">Best</td>
+                    <td data-label="Congruent" style="color:#000">High</td>
+                    <td data-label="Decent" style="color:#000">Moderate</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#000" scope="row">Day Light Interaction</th>
+                    <td data-label="Pre-Eminent" >Guaranteed</td>
+                    <td data-label="Eminent">Actuated</td>
+                    <td data-label="Congruent">On-Demand</td>
+                    <td data-label="Decent">On-Demand</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#000" scope="row">Human Centric Lighting</th>
+                    <td  data-label="Pre-Eminent" style="color:#000">Guaranteed</td>
+                    <td data-label="Eminent" style="color:#000">Actuated</td>
+                    <td data-label="Congruent" style="color:#000">On-Demand</td>
+                    <td data-label="Decent" style="color:#000">On-Demand</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#000" scope="row">4-D Illusory</th>
+                    <td data-label="Pre-Eminent" >Guaranteed</td>
+                    <td data-label="Eminent">Actuated</td>
+                    <td data-label="Congruent" >On-Demand</td>
+                    <td data-label="Decent">On-Demand</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#000" scope="row">Stock Survey for Price Minimization</th>
+                    <td  data-label="Pre-Eminent" style="color:#000">Meticulous</td>
+                    <td data-label="Eminent" style="color:#000">Extensive</td>
+                    <td data-label="Congruent" style="color:#000">Thorough</td>
+                    <td data-label="Decent" style="color:#000">Swift</td>
+                  </tr>
+                  <tr>
+                    <td style="color:#000" scope="row">After Completion Consultancy</th>
+                    <td  data-label="Pre-Eminent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                    <td data-label="Eminent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                    <td data-label="Congruent"><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                    <td data-label="Decent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
                   </tr>
                 </tbody>
               </table>

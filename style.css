@@ -1072,7 +1072,7 @@ ion-icon {
   justify-content: center;
   flex-direction: column;
   padding: 10%;
-  position:inherit;
+  /* position:inherit; */
   background-color: #3f3b45
   ;
   color:#fff;
