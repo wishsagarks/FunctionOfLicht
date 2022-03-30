@@ -13,6 +13,7 @@
     <title>Function of Licht</title>
 
     <link rel="stylesheet" href="style.css">
+    
 
 </head>
 
@@ -28,6 +29,8 @@
         color:#fff;
         
     }
+
+    
 
     .container-title{
         text-transform: uppercase;
@@ -187,15 +190,28 @@
                     <img class="main-image" src="assets/img/designPrinciple/Energy Efficient.webp" />
                 </div>
                 <div class="video-container">
-                    <video controls width="450">
+                    <video  id="myVideo" class="abc" controls width="450">
                         <source src="assets/video/designPrinciple/Power saving 1.mp4"  >
 
                     </video> 
-                    <video controls width="450" style="margin-top: 30px;">
+                    <video id="myssVideo" class="def" controls width="450" style="margin-top: 30px;">
+                        
                         <source src="assets/video/designPrinciple/Power Saving 2.mp4"  >
-
                     </video> 
 
+                    <script>
+                        const vid=document.getElementById('myVideo')
+                        vid.muted=true;
+                        const vid2=document.getElementById('myssVideo')
+                        vid2.muted=true;
+                        vid.addEventListener('ended',()=>{
+                            vid2.play();
+                        })
+                        vid2.addEventListener('ended',()=>{
+                            vid.play();
+                        })
+                        vid.play();
+                    </script>
                 </div>
             </div>
 
@@ -258,5 +274,51 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+<script>
+    // const videos=document.body.querySelectorAll('video')
+    // console.log(videos) 
+    // document.body.getElementById("vid1").play();
+    // // videos[0].play;
+    // if(videos[0].played.length==videos[0].length) videos[1].play();
+// 
+    // function playVideoSequentially(){
+    //     console.log('aaa')
+    //     const videos=document.body.getElementsByTagName('video')
+    //     while(true){
+    //             videos[0].autoplay=true;
+    //             if(videos[0].played.length==videos[0].length) {
+    //                 videos[0].pause();
+    //                 videos[1].play();
+
+    //     }
+    //     }}
+    //     // playVideoSequentially();
+    //     console.log(document.body.querySelector('vid1>video').length);
+
+        console.log(document.body.getElementsByClassName('abc'))
+
+        // document.body.getElementsByClassName('abc')[0].setAttribute('autoplay muted',true);
+
+
+//    var count=1;
+//    var player=document.getElementById('myVideo');
+//    var mp4Vid = document.getElementById('mp4Source');
+//    player.addEventListener('ended',myHandler,false);
+
+//    function myHandler(e)
+//    {
+
+//       if(!e) 
+//       {
+//          e = window.event; 
+//       }
+//       count++;
+//       $(mp4Vid).attr('src', "assets/video/designPrinciple/Power Saving "+count+".mp4");
+//       player.load();
+//       player.play();
+//    }
+
+
+</script>
 
 </html>
