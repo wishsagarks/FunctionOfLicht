@@ -195,11 +195,11 @@
                     <img class="main-image" src="assets/img/designPrinciple/Energy Efficient.webp" />
                 </div>
                 <div class="video-container">
-                    <video  id="myVideo" class="abc" controls width="450">
+                    <video muted  id="myVideo" class="abc" controls width="450">
                         <source src="assets/video/designPrinciple/Power saving 1.mp4"  >
 
                     </video> 
-                    <video id="myssVideo" class="def" controls width="450" style="margin-top: 30px;">
+                    <video muted id="myssVideo" class="def" controls width="450" style="margin-top: 30px;">
                         
                         <source src="assets/video/designPrinciple/Power Saving 2.mp4"  >
                     </video> 
@@ -282,6 +282,7 @@
     // vid.play();
 
     var videos = document.getElementsByTagName("video");
+    console.log('vidlen',videos.length)
 
     function checkScroll() {
         var fraction = 0.8; // Play when 80% of the player is visible.
@@ -300,7 +301,7 @@
                 visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
 
                 visible = visibleX * visibleY / (w * h);
-
+                console.log('visible',visible)
                 if (visible > fraction) {
                     video.play();
                 } else {
