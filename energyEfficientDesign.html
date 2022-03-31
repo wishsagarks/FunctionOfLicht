@@ -98,6 +98,7 @@
         }
         video{
             width: 250px;
+            
         }
 
         
@@ -170,6 +171,10 @@
     <div class="main-wrapper">
         
         <h1 class="container-title" style="margin-top:60px;">Energy efficient design</h1>
+        <!-- <script>
+                        document.body.getElementsByClassName('container-title').click();
+
+        </script> -->
 
         <p style="text-align: center;">It is not sufficient to observe earth day on 22nd April and act quite an
             oblivion on the rest of 364 days! And mind you, today's wastage is
@@ -199,19 +204,7 @@
                         <source src="assets/video/designPrinciple/Power Saving 2.mp4"  >
                     </video> 
 
-                    <script>
-                        const vid=document.getElementById('myVideo')
-                        vid.muted=true;
-                        const vid2=document.getElementById('myssVideo')
-                        vid2.muted=true;
-                        vid.addEventListener('ended',()=>{
-                            vid2.play();
-                        })
-                        vid2.addEventListener('ended',()=>{
-                            vid.play();
-                        })
-                        vid.play();
-                    </script>
+                   
                 </div>
             </div>
 
@@ -274,6 +267,53 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+<script>
+    console.log(window.innerWidth)
+    // const vid=document.getElementById('myVideo')
+    // vid.muted=true;
+    // const vid2=document.getElementById('myssVideo')
+    // vid2.muted=true;
+    // vid.addEventListener('ended',()=>{
+    //     vid2.play();
+    // })
+    // vid2.addEventListener('ended',()=>{
+    //     vid.play();
+    // })
+    // vid.play();
+
+    var videos = document.getElementsByTagName("video");
+
+    function checkScroll() {
+        var fraction = 0.8; // Play when 80% of the player is visible.
+        // document.body.getElementsByClassName('container-title').click();
+
+
+        for(var i = 0; i < videos.length; i++) {
+
+            var video = videos[i];
+
+            var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+                b = y + h, //bottom
+                visibleX, visibleY, visible;
+
+                visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+                visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+                visible = visibleX * visibleY / (w * h);
+
+                if (visible > fraction) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+
+        }
+
+    }
+
+    window.addEventListener('scroll', checkScroll, false);
+    window.addEventListener('resize', checkScroll, false);
+</script>
 <script>
     // const videos=document.body.querySelectorAll('video')
     // console.log(videos) 
