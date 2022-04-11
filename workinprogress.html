@@ -29,8 +29,63 @@
   .carousel-container{
     transform:scale(1.4);
   }
-</style>
 
+  .card {
+  position: relative;
+}
+
+.banner-content {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display:none;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: calc(0.3rem - 0px);
+}
+
+.card-img-top {
+  width: 400px;
+  height:200px;
+  border-radius: 32px;
+  /* opacity: 0.5; */
+}
+
+.card-img-top:hover {
+  opacity: 1;
+}
+
+.card-img-top:hover + .banner-content {
+  display: block;
+  opacity:0.6;
+}
+</style>
+<script>
+  (function (w, d, s, u) {
+  w.gbwawc = {
+  url: u,
+  options: {
+          waId: "+91 9874209695",
+          siteName: "f(Licht)",
+          siteTag: "Usually replies in 10 minutes",
+          siteLogo: "https://waw.gallabox.com/chatbotavatars/4.png",
+          widgetPosition: "RIGHT",
+          triggerMessage: "",
+          welcomeMessage: "Hi! How can we help you?",
+          brandColor: "#25D366",
+          messageText: "",
+          replyOptions: [''],
+      },
+  };
+  var h = d.getElementsByTagName(s)[0],
+  j = d.createElement(s);
+  j.async = true;
+  j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
+  h.parentNode.insertBefore(j, h);
+  })(window, document, "script", "https://waw.gallabox.com");
+  </script>
 <body>
   <!-- navbar -->
   <nav class="navbar navbar-light bg-dark ">
@@ -91,7 +146,7 @@
 
   </div>
 
-  <div class="div2">
+  <!-- <div class="div2">
     <div class="box">
       <div id="carouselExampleCaptions" class="carousel slide carousel-container" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -631,7 +686,38 @@
         </button>
       </div>
     </div>
+  </div> -->
+
+
+
+  <div>
+    <div class="img-container" >
+      <div class="col-md-6">
+        <div class="card">
+          <a href="#">
+            <img id="13" class="card-img-top img-raised" src="https://pixy.org/src/477/4774988.jpg" alt="Open Project 1">
+            <div class="banner-content">
+              I am a new coder.<br> Happy to meet : )
+      
+            </div><br>
+            <a class="mb-2 mt-2 text-center small-xl" href="#">Check More Details</a>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
+
+
+<script>
+  const cont=document.getElementById("13")
+  cont.addEventListener('mouseenter',()=>{
+    cont.style.opacity=0.2;
+  })
+  cont.addEventListener('mouseleave',()=>{
+    cont.style.opacity=1;
+  })
+</script>
+
   <div class="foot"></div>
   <footer class="footer-distributed">
     <div class="footer-left">
