@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>function of Licht</title>
      <link rel="icon" href="./assets/img/fol.ico" type="image/icon" sizes="16x16">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link rel="stylesheet" href="./landingpage.css">
      <link rel="stylesheet" href="./style.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,10 +16,93 @@
    
 </head>
 
+<style>
+  .nav-link{
+    color:black;
+  }
+
+  #clockContainer {
+    position: relative;
+    /* margin: auto; */
+    height: 7rem;
+    /*to make the height and width responsive*/
+    width: 7rem;
+    background: url("assets/img/landing/clock-removebg-preview.png") no-repeat;
+    /*setting our background image*/
+    background-size: 100%;
+}
+  
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+  
+#hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+}
+  
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+  
+#second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+}
+
+.padding-30{
+  padding:30px;
+}
+
+.padding-20{
+  padding:20px;
+}
+</style>
+
+<script>
+  (function (w, d, s, u) {
+  w.gbwawc = {
+  url: u,
+  options: {
+          waId: "+91 9874209695",
+          siteName: "f(Licht)",
+          siteTag: "Usually replies in 10 minutes",
+          siteLogo: "https://waw.gallabox.com/chatbotavatars/4.png",
+          widgetPosition: "RIGHT",
+          triggerMessage: "",
+          welcomeMessage: "Hi! How can we help you?",
+          brandColor: "#25D366",
+          messageText: "",
+          replyOptions: [''],
+      },
+  };
+  var h = d.getElementsByTagName(s)[0],
+  j = d.createElement(s);
+  j.async = true;
+  j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
+  h.parentNode.insertBefore(j, h);
+  })(window, document, "script", "https://waw.gallabox.com");
+  </script>
+
 <body>
   <div class="totalcontent">
 <div class="indexing">
-  <nav class="navbar navbar-light bg-transparent ">
+  <nav class="navbar navbar-dark bg-transparent ">
    
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html" style="color: white;"><img src="./assets/img/func.png" width="30px" height="30px"
@@ -27,7 +111,7 @@
 <div class="insidewrap">
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
   <div class="container-fluid">
-<div class="insidenav">
+<div class="insidenav" style="color:black;">
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
@@ -44,8 +128,21 @@
           <a class="nav-link" href="comingsoon.html" style="color: white;font-weight: bolder;opacity: 1;">How we Work</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="services.html"style="color: white;font-weight: bolder;opacity: 1;">Services</a>
+          <a class="nav-link" href="services.html"style="color:white;font-weight: bolder;opacity: 1;">Services</a>
         </li>
+        <div style="align-items:flex-end;flex-direction:row;display:flex;">
+
+            <li class="nav-item">
+              <a class="nav-link" href="services.html"style="color: white;font-weight: bolder;opacity: 1;"><span style="color:white;"><i class="fa-brands fa-linkedin"></i></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html"style="color: white;font-weight: bolder;opacity: 1;"><span style="color:white;"><i class="fa-brands fa-facebook"></i></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html"style="color: white;font-weight: bolder;opacity: 1;"><span style="color:white;"><i class="fa-brands fa-instagram"></i></span></a>
+            </li>
+        </div>
+        
       </ul>
     </div>
   </div>
@@ -56,6 +153,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar">
         <!-- <ion-icon name="reorder-three-outline" color="light" size="large"></ion-icon> -->
+        
         <img src="./assets/img/nAV/bulb.gif" height="32rem" width="32rem" style="margin-right: 0.5rem;">
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -66,7 +164,7 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#" >Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./designprinciple.html">Design principle</a>
@@ -79,8 +177,21 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="services.html">Services</a>
+
             </li>
-            <li class="nav-item">
+            <div style="align-items:flex-end;flex-direction:row;display:flex;">
+
+              <li class="nav-item">
+                <a class="nav-link" href="services.html"style="color: white;font-weight: bolder;opacity: 1;"><span style="color:black;"><i class="fa-brands fa-linkedin"></i></span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html"style="color: white;font-weight: bolder;opacity: 1;"><span style="color:black;"><i class="fa-brands fa-facebook"></i></span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html"style="color: white;font-weight: bolder;opacity: 1;"><span style="color:black;"><i class="fa-brands fa-instagram"></i></span></a>
+              </li>
+          </div>
+            <!-- <li class="nav-item">
               <a class="nav-link" href="onlineconsultancy.html">Online Consultancy</a>
             </li>
             <li class="nav-item">
@@ -91,7 +202,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./contactus.html">Contact Us</a>
-            </li>
+            </li> -->
 
           </ul>
           <form class="d-flex">
@@ -108,11 +219,11 @@
   <div id="cover">
     <div id="wraper">
          <div class="images">
-          <div class="lazy" style="display: block; background-image: url('https://www.foscarini.com/wp-content/uploads/2020/01/hp-day-min.jpg');"></div>
+          <div class="lazy" id="bg-image-div" style="display: block;z-index:-20;transition:0.7s ease-in"></div>
           </div>
     </div>
     <!-- slider -->
-    <div class="boxdiv2">
+    <!-- <div class="boxdiv2">
       <div class="divo1"></div>
       <div class="div2">
       
@@ -635,7 +746,7 @@
           </div>
         </div>
       </div>
-      </div>
+      </div> -->
       
   </div>
 </div>
@@ -643,6 +754,79 @@
 
 
 </div>
+
+<footer style="display:flex;flex-direction: column;position:absolute;bottom:0.4%;">
+
+  <div class="clock-and-kolkata-container" style="display:flex;align-items: center;justify-content: flex-start;padding-left:30px;">
+    <div id="clockContainer">
+      <div id="hour"></div>
+      <div id="minute"></div>
+      <div id="second"></div>
+    </div>
+    <div style="font-weight: bold;font-size:1.3rem;margin-left:30px;text-align: center;color:white;">
+      Kolkata<br>
+      INDIA
+    </div>
+    
+  </div>
+
+  <div style="display:flex;align-items: center;justify-content: center; color: white;font-weight: bold;">
+    <div class="padding-30">&#169; f(Licht) 2022</div>
+    <div class="padding-20">|</div>
+    <div class="padding-30">24/6, Abhinash Banerjee Lane, Kolkata 710004 INDIA
+    </div>
+    <div class="padding-20">|</div>
+    <div class="padding-30">T. +91-9874209695</div>
+    <div class="padding-20">|</div>
+    <div class="padding-30">Kolkata@functionoflicht.com</div>
+  </div>
+  
+</footer>
+<script>
+
+  setInterval(() => {
+      d = new Date(); //object of date()
+      hr = d.getHours();
+      min = d.getMinutes();
+      sec = d.getSeconds();
+      hr_rotation = 30 * hr + min / 2; //converting current time
+      min_rotation = 6 * min;
+      sec_rotation = 6 * sec;
+    
+      hour.style.transform = `rotate(${hr_rotation}deg)`;
+      minute.style.transform = `rotate(${min_rotation}deg)`;
+      second.style.transform = `rotate(${sec_rotation}deg)`;
+  }, 1000)
+  </script>
+
+<!-- <div style="z-index:999; position:absolute;bottom:2%;display:flex;flex-direction: column;">
+  <div style="display:flex;align-items: center;justify-content: center;">
+    
+  
+
+
+</div> -->
+
+<script>
+  var i = 0;
+
+  var images = [
+      'assets/img/landing/A21.webp',
+      'assets/img/landing/A23.webp',
+      'assets/img/landing/A25.webp',
+      'assets/img/landing/A32.webp',
+      'assets/img/landing/A30.webp'
+  ];
+
+  function backgroundChanger() {
+    if(i >= images.length){
+      i = 0;
+    }
+    document.getElementById('bg-image-div').style.backgroundImage = 'url(' + images[i++] + ')';
+  }
+
+  setInterval( backgroundChanger, 9000);
+</script>
 </body>
 <!-- scripts -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
