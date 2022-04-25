@@ -4,11 +4,15 @@ var gallery = document.getElementById('image-gallery')
 var pageIndicator = document.getElementById('page')
 var galleryDots = document.getElementById('gallery-dots');
 
-var images= [];
+var images= [ './1.webp',
+      'assets/img/landing/A23.webp',
+      'assets/img/landing/A25.webp',
+      'assets/img/landing/A32.webp',
+      'assets/img/landing/A30.webp'];
 for (var i = 0; i < 36; i++) {
   images.push({
-    title: "Image " + (i + 1),
-    source: "https://picsum.photos/500/500?random&img=" + i
+    title:(i + 1),
+    source: + i
   });
 }
 
