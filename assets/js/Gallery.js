@@ -4,15 +4,11 @@ var gallery = document.getElementById('image-gallery')
 var pageIndicator = document.getElementById('page')
 var galleryDots = document.getElementById('gallery-dots');
 
-var images= [ './1.webp',
-      'assets/img/landing/A23.webp',
-      'assets/img/landing/A25.webp',
-      'assets/img/landing/A32.webp',
-      'assets/img/landing/A30.webp'];
-for (var i = 0; i < 36; i++) {
+var images= [];
+for (var i = 1; i < 32; i++) {
   images.push({
-    title:(i + 1),
-    source: + i
+    title:(i),
+    source: "assets/img/landing/"+i+".webp",
   });
 }
 
@@ -86,8 +82,10 @@ function showImages() {
       var title = document.createElement('p');
       var titleText = document.createTextNode(images[i].title);
       var img = document.createElement('img');
-      
+  
+    
       template.classList.add('template')
+      
       img.setAttribute("src", images[i].source);
       img.setAttribute('alt', images[i].title);
 
