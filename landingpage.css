@@ -39,3 +39,59 @@ margin-left: -20vw;
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
 }
+
+.padding-30{
+  font-size: 15px;
+  padding:0px;
+  display: block;
+  position: relative;
+  left: 75vh;
+  bottom: -3vh;
+}
+.padding-40{
+  position: relative;
+left: 95vh;
+  top: -1.1vh;
+}
+.padding-50
+{
+  position: relative;
+  top: -3.5vh;
+  left: 115vh;
+  
+}
+.clock-and-kolkata-container{
+  position: relative;
+  top:6vh;
+}
+
+
+@media screen and (max-width:415px) {
+  .clock-and-kolkata-container{
+    position: relative;
+    top:-6vh;
+    left: 5vh;
+  }
+
+  .padding-30{
+    font-size: 15px;
+    padding:0px;
+    display: block;
+    position: relative;
+    left: 5vh;
+    bottom: 3vh;
+  }
+  .padding-40{
+    position: relative;
+left: 5vh;
+    top: -1.1vh;
+  }
+  .padding-50
+  {
+    position: relative;
+    top: -.5vh;
+    left: 5vh;
+    
+  }
+
+}
