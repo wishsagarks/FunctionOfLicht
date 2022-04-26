@@ -72,8 +72,12 @@ font-size:30px;
         width:20%;
  
     }
-
-
+    .vertical {
+            border-left: 6px dotted rgb(231, 231, 231);
+            height: 150px;
+            position:absolute;
+            left: 50%;
+        }
     .desc{
         background-color: black;  
 padding:4px 4px;
@@ -100,15 +104,18 @@ padding:4px 4px;
             position: relative;
             left:-25%;
             animation: set1 1s;
+            overflow-y: hidden;
         }
         .set-2{
             position:relative;
+            overflow-y: hidden;
             left: 20%;
             animation: set2 1s;
         }
     
     
         .set-3{
+            overflow-y: hidden;
             position:relative;
              left: -30%;
              
@@ -116,16 +123,19 @@ padding:4px 4px;
         }
     
         .set-4{
+            overflow-y: hidden;
             position:relative;
              left: 20%;
             animation:set4 1s;
         }
         .set-5{
+            overflow-y: hidden;
             position:relative;
              left: -30%;
             animation:set4 1s;
         }
         .set-6{
+            overflow-y: hidden;
             position:relative;
              left: 20%;
             animation:set4 1s;
@@ -272,7 +282,7 @@ In f(Licht), everyone religiously pursues a simple philosophy: Be minimalist in 
 </div>
     <div class="images-container">
    
-        <div class="set-1 row">
+        <div class="set-1 row" style="overflow-y: hidden;">
             <img src="how we work page\how we work images\1-removebg-preview (1).png">
             <div class="text-container">
                 <h2 style="overflow-y: hidden;">1.SEED STAGE</h2>
@@ -285,10 +295,8 @@ In f(Licht), everyone religiously pursues a simple philosophy: Be minimalist in 
                     through genial
                     conversation.</p>
             </div>
-
-            
+            <!--<div class = "vertical" style="position:relative; top: 10px; right: 10vh;"></div>-->
         </div>
-        
         <div class="set-2 row">
             <img src="how we work page\how we work images\2-removebg-preview (1).png">
             <div class="text-container">
@@ -365,6 +373,7 @@ optimality.
                     always give the client peace of
                     mind.</p>
             </div>
+         
         </div>
         <hr>
     </div>
