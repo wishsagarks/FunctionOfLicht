@@ -41,6 +41,23 @@
     j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
     h.parentNode.insertBefore(j, h);
     })(window, document, "script", "https://waw.gallabox.com");
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
     </script>
 
 <style>
@@ -89,8 +106,31 @@
         display: flex;
         flex-direction: column;
     }
+    .reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
     @media screen and (max-width: 480px){
-
+        .reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.p-2{
+    position: relative;
+    left: -5px;
+}
         .main-wrapper{
             padding:60px;
             display: flex;
@@ -196,29 +236,29 @@
     </div> -->
     <div class="main-wrapper">
         
-        <h1 class="container-title" style="font-family: 'Open Sans'; text-decoration: none; margin-top:60px;">Energy efficient design</h1>
+        <h1 class="container-title" style="font-family: 'Open Sans'; text-decoration: none; margin-top:60px; font-weight: 400;">Energy efficient design</h1>
         <!-- <script>
                         document.body.getElementsByClassName('container-title').click();
 
         </script> -->
 
-        <p style="text-align: left; font-family: 'Open Sans';">It is not sufficient to observe earth day on 22<sup>nd</sup> April and act quite an
+        <p class="reveal" style="text-align: left; margin-top:40px; font-family: 'Open Sans';">It is not sufficient to observe earth day on 22<sup>nd</sup> April and act quite an
             oblivion on the rest of 364 days! And mind you, today's wastage is
             tomorrow's shortage.</p>
-            <p style="text-align: left;font-family: 'Open Sans'; position: relative; right: 11vh;">Even the dopiest person too will raise his eyebrows if the monthly electricity
+            <p class="p-2 reveal" style="text-align: left;font-family: 'Open Sans'; position: relative; right: 11vh;">Even the dopiest person too will raise his eyebrows if the monthly electricity
 
                 consumption increases by 5%.</p>
 
 
-                <p style="text-align: left;font-family: 'Open Sans';">Who can address your concerns about energy better than someone who has already been
+                <p class="reveal"style="text-align: left; margin-top:40px; font-family: 'Open Sans';">Who can address your concerns about energy better than someone who has already been
                     subscribed to the ideology of A Minimalist by Requirements, A maximalist by performance!</p>
-            <h1 class="container-title">Modus Operandi</h1>
-            <p>In f(Licht) it is our goal to provide a COMPLETE 360&#176 CUSTOMIZED Solution to Every Individual without threatening their pockets</p>
-            <div class="images-container">
+            <h1 class="container-title reveal" style="text-decoration: none;margin-top:40px; font-weight: 400;">Modus Operandi</h1>
+            <p class="reveal" style="font-family: 'Open Sans';margin-top:40px; ">In f(Licht) it is our goal to provide a COMPLETE 360&#176 CUSTOMIZED Solution to Every Individual without threatening their pockets</p>
+            <div class="images-container reveal" style="overflow-y: hidden;">
                 <div>
                     <img class="main-image" src="assets/img/designPrinciple/Energy Efficient.webp" />
                 </div>
-                <div class="video-container">
+                <div class="video-container reveal" style="overflow-y: hidden;">
                     <video muted  id="myVideo" class="abc" controls width="450">
                         <source src="assets/video/designPrinciple/Power saving 1.mp4"  >
 
@@ -232,7 +272,7 @@
                 </div>
             </div>
 
-            <p style="text-align: center;">We can work hand in hand with the architect from the beginning and suggest the best possible way your architect should do the design to make your dream a reality! Starting from suitable amelioration of the architectural design to find out the best lighting brand and also the best power electronics driver to give you the best output.<br><br>
+            <p class="reveal" style="text-align: center; margin-top:40px;">We can work hand in hand with the architect from the beginning and suggest the best possible way your architect should do the design to make your dream a reality! Starting from suitable amelioration of the architectural design to find out the best lighting brand and also the best power electronics driver to give you the best output.<br><br>
 
                 Nonetheless, come late, come right, even if your architect has already handed you the project, still, there is no need to give up your hope. Since you have shown the patience to navigate till this point, let us assure you that to provide the best plausible design without threatening your solvency is now our responsibility!<br><br>
                 
