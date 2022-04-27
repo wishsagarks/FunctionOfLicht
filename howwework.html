@@ -38,6 +38,26 @@
     j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
     h.parentNode.insertBefore(j, h);
     })(window, document, "script", "https://waw.gallabox.com");
+
+
+
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
     </script>
 <style>
     *{
@@ -111,6 +131,16 @@ padding:4px 4px;
         justify-content: center;
         margin-bottom:20px;
     }
+    .reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 
         .set-1{
             margin-top: 4vh;
@@ -248,6 +278,16 @@ padding:4px 4px;
         margin-bottom: 3vh;
          
         }
+        .reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
     }
 </style>
 <body>
@@ -319,9 +359,9 @@ padding:4px 4px;
 In f(Licht), everyone religiously pursues a simple philosophy: Be minimalist in requirements, and maximalist in performance. The CEO herself strongly vouches for making the lighting solution viable to help everyone decorate their home with lighting environments that allow us to feel the interplay between light and architecture in all its diversity. We put enormous emphasis on providing a personalized solution so that the clients get the best value for every penny invested in the project. 
 </p>
 </div>
-    <div class="images-container">
+    <div class="images-container" style="   overflow-y: hidden;">
    
-        <div class="set-1 row" style="overflow-y: hidden;">
+        <div class="set-1 row reveal" style="overflow-y: hidden;">
             <img class="img-1" src="how we work page\how we work images\1-removebg-preview (1).png">
             <div class="text-container" style="font-family: 'Open Sans';">
                 <h2 style="overflow-y: hidden;">1.SEED STAGE</h2>
@@ -336,7 +376,7 @@ In f(Licht), everyone religiously pursues a simple philosophy: Be minimalist in 
             </div>
             <!--<div class = "vertical" style="position:relative; top: 10px; right: 10vh;"></div>-->
         </div>
-        <div class="set-2 row">
+        <div class="set-2 row reveal">
             <img class="img-1"src="how we work page\how we work images\2-removebg-preview (1).png">
             <div class="text-container"  style="font-family: 'Open Sans';">
                 <h2  style="overflow-y: hidden;">2. GERMINATION STAGE</h2>
@@ -351,7 +391,7 @@ In f(Licht), everyone religiously pursues a simple philosophy: Be minimalist in 
             </div>
         </div>
 
-        <div class="set-3 row">
+        <div class="set-3 row reveal">
             <img class="img-1" src="how we work page\how we work images\3-removebg-preview (1).png">
             <div class="text-container"  style="font-family: 'Open Sans';">
                 <h2  style="overflow-y: hidden;">SEEDLING STAGE</h2>
@@ -369,7 +409,7 @@ optimality.
             </div>
         </div>
 
-        <div class="set-4 row">
+        <div class="set-4 row reveal">
             <img class="img-1" src="how we work page\how we work images\PLANTATION-removebg-preview (1).png">
             <div class="text-container"  style="font-family: 'Open Sans';">
                 <h2  style="overflow-y: hidden;">PLANTATION STAGE</h2>
@@ -384,7 +424,7 @@ optimality.
                     deadline.</p>
             </div>
         </div>
-        <div class="set-5 row">
+        <div class="set-5 row reveal">
             <img  class="img-1" src="how we work page\how we work images\unnamed__1_-removebg-preview (1).png">
             <div class="text-container"  style="font-family: 'Open Sans';">
                 <h2  style="overflow-y: hidden;">RIPENING STAGE</h2>
@@ -397,7 +437,7 @@ optimality.
                     f(Licht) fills gratified. </p>
             </div>
         </div>
-        <div class="set-6 row">
+        <div class="set-6 row reveal">
             <img  class="img-1" src="how we work page\how we work images\5-removebg-preview (1).png">
             <div class="text-container"  style="font-family: 'Open Sans';">
                 <h2 style="overflow-y: hidden;">NOURISHING STAGE</h2>
