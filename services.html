@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/img/fol.ico" type="image/icon" sizes="16x16">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" >
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -41,9 +44,164 @@
   j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
   h.parentNode.insertBefore(j, h);
   })(window, document, "script", "https://waw.gallabox.com");
+
+
+  // Animation code
+  function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
   </script>
 
 <style>
+
+.fade-1 {
+  font-family: "Montserrat Medium";
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  opacity: 0;
+  filter: blur(18px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.3s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+
+
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.vertical {
+            border-left: 6px dotted rgb(0, 0, 0);
+            height: 150px;
+            position:relative;
+            left: 10px;
+            margin-bottom: 60px;
+        }
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: .8s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.text-container{
+        margin-left:20px;
+        width:60%;
+        position: relative;
+        left: -20%;
+ 
+    }
+.area {
+  text-align: center;
+  font-size: 4.5em;
+  color: #fff;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur 1.75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #084895,
+      
+  }
+}
+  
     td{
         color:#fff;
     }
@@ -58,9 +216,9 @@
     }
   
 .image-shadow:hover{
- -moz-box-shadow: 0 0 10px #ccc;
-      -webkit-box-shadow: 0 0 10px #ccc;
-      box-shadow: 0 0 10px #ccc;
+ -moz-box-shadow: 0 0 10px rgb(4, 4, 4);
+      -webkit-box-shadow: 0 0 10px rgb(12, 9, 9);
+      box-shadow: 0 0 10px rgb(22, 21, 21);
 }
 
 
@@ -160,7 +318,7 @@ table th {
 
   
     <!-- navbar -->
-    <nav class="navbar navbar-light bg-dark ">
+    <nav class="navbar navbar-light bg-black">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html" style="color: white;"><img src="./assets/img/func.png" width="30px"
                     height="30px" style="font-family: 'Montserrat', sans-serif;
@@ -216,14 +374,27 @@ table th {
     </nav>
 
 
-    <div class="services-wrapper" style="padding:50px;">
-        <h2  style="margin:30px;">Services</h2>
-        <p>
+    <div class="services-wrapper" style="padding:50px; overflow-y: hidden; background-color: #ddd; color: #000;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter"> SERVICES</h3>
+          </div>
+        </div>
+      </div> 
+     <!-- <h2  class="area " style="margin:30px; ">Services</h2>-->
+       
+        <p class="reveal fade-1">
+          <span>
             Before you run over this page to determine the package price to compare, spend a
             few seconds and consider our work ethics! In f(Licht), we promote personalised
             solutions without threatening your budget! Do remember meat for one is poison for
             others! Never rush for a readily available solution; take a pause and consider
             whether it would serve you or not! What! Are you concerned with solvency! No way!
+          </span> 
+          </p>
+            <br>
+            <p class=" reveal">
             In f(Licht), our sole objective is to make the lighting solution viable to help everyone
             decorate their home with lighting environments that allow us to feel the interplay
             between light and architecture in all its diversity. With the combined use of luminaires
@@ -231,58 +402,65 @@ table th {
             illusory, which will enhance a space by its aesthetic value following health benefits
             exerted by the illumination. In addition, we will surely provide a personalised solution
             that would help you cut down your electricity bill by at least 13%.
-        </p>
+      <br>
+          </p>
 
-
-        <p>
+          <br>
+        <p class=" reveal">
             Just have a look on the composition of our team, and you will get the confidence that
             why should you try your lighting project luck with f(Licht). Our team comprises
             experienced industry personnel, illustrious academicians, active market surveyors.
             On top of that, we have a robust network with like-minded people. As Warren Buffet
             rightly said, “your network is your net worth,” We rely on that.
         </p>
-
-        <img  src="assets/img/services/Services Team.webp" style="width:20rem;height:30%;margin:3%;" alt="services cycle" />
-
-        <p>
+        <br>      <br>
+        <img class="reveal"  src="assets/img/services/Services Team.webp" style="width:20rem;height:30%;margin:3%;" alt="services cycle" />
+        <br>      <br>
+        <p class=" reveal">
             Well! Well! So now an obvious question that must haunt you: Why are the different
             packages there? The answer is simple: <span style="text-decoration:underline;">time is money!</span> More time we invest in your
             project, you will experience a tangible difference! And as you know time is money,
             friends do you think would it be unfair if we charge a bit extra! Nonetheless, for better
             objectivity and clarity, just have a glance of our packages.
         </p>
+        <br>      <br>
+        <div class="text-container">
+        <p class=" reveal">
 
-        <p>
+
             <span class="sub-heading-text" style="font-weight:bold;">The Pre-Eminent:</span>
             <br>
             As the name implies it is the package, which allows f(Licht) to operate with the
             maximum degree of freedom, and thereby we can ensure the best personalized
             design for you. This package is best suited when you are planning for a fresh setup,
-            <br>
+            <br>      <br>
+    
             since here we have to work from the scratch and work hand in hand with the
-            architect!<br>
-            <br>
+            architect!
             We will suggest architectural optimization for the best possible energy saving and
             daylight integration. We will carry out comprehensive research for every square ft of
             your site and will ensure the BEST outcome.
             On the top of that, our device research team will find the best led light together with
             an advanced driver circuit to ensure maximum power utilization, and reduction of
             your monthly electricity bill.
-            <br><br>
+            <br><br>      <br>
             On the top of that, our device research team will find the best led light together with
             an advanced driver circuit to ensure maximum power utilization, and reduction of
             your monthly electricity bill.
-            <br><br>
+            <br><br>      <br>
             Alongside our market research team will guide you to find the best product for your
             indoor décor, and thereby we will get a chance to help you experiencing the state-of
             the art research benefits and advancements of illumination science.<br><br>
             To understand our different design philosophy, and how we provide a customized
             solution to our client you may have a look to our design principle pages. In a
             nutshell, this is a 360 0 package, go for it when you are about to start a fresh project
-            and don’t want any headache afterwards.<br><br>
-        </p>
+            and don’t want any headache afterwards.<br><br>      <br>
 
-        <p>
+        
+          </p>
+
+        <br>      <br>
+        <p class=" reveal" style="position:relative; left:65%">
            <span class="sub-heading-text" style="font-weight:bold;">The Eminent:</span><br>
             It is always better to be in the nick of time than to barn the door after the horse has
             bolted!<br><br>
@@ -299,8 +477,8 @@ table th {
             customized solution for your existing structure.
 
         </p>
-        <p>
-           <span class="sub-heading-text" style="font-weight:bold;">The Congruent:</span><br>
+        <p class=" reveal">
+           <span class="sub-heading-text" style="font-weight:bold;  margin-top: 10vh;">The Congruent:</span><br>
             As the name implies, it is a pack quite similar to what normally client’s expect from
             their lighting designer. However, just like the previous two packages, we will also do
             justice to our slogan: A minimalist by requirement, a maximalist by performance. We
@@ -319,7 +497,7 @@ table th {
             pollution. Although the package name is ‘The Congruent’, once you take the service,
             you will understand how noncongruent it is!
         </p>
-        <p>
+        <p class=" reveal" style="position:relative; left:35%; margin-top: 10vh;">
            <span class="sub-heading-text" style="font-weight:bold;">The Decent: </span><br>
             The handiest and speedy package that we offer from our side. It is exceptionally
             suitable if you are looking for a quick solution to your lighting design issues. We will
@@ -328,6 +506,8 @@ table th {
             may not yield the most optimal solution that you may realize with the ‘Pre-eminent’ or
             ‘Eminent’ pack, but indeed it will ensure THE BEST VALUE  for your money!
         </p>
+      </div>
+        <div class = "vertical reveal" style="position:relative; top: 10px; right: 10vh; overflow-y: hidden;"></div>
         <div >
             <!-- <table class="table table-bordered table-striped " style="color:#000">
                 <thead style="margin-right: 100px;padding:20px;">
@@ -428,7 +608,7 @@ table th {
                 </tbody>
               </table> -->
 
-              <table class="image-shadow">
+              <table class="image-shadow reveal">
                 <thead>
                   <tr>
                     <th scope="col">Services</th>
@@ -536,7 +716,7 @@ table th {
 
     </div> -->
 
-    <div class="foot-new" style="margin: -1rem auto;"></div>
+    <div class="foot-new" style="margin: -1rem auto; background-color: #ddd;"></div>
     <footer class="footer-distributed">
         <div class="footer-left">
             <img src="./assets/img/func.png">
