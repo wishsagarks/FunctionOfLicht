@@ -31,26 +31,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.div1 {
-  height: 50vh;
-  width: 100%;
-  background: linear-gradient(
-    0deg,
-    #ffffff 3.01%,
-    #f9f9f9 3.97%,
-    #c5c5c5 11.67%,
-    #969696 19.38%,
-    #6e6e6e 28.04%,
-    #4c4c4c 36.71%,
-    #303030 45.37%,
-    #1b1b1b 55.96%,
-    #0c0c0c 66.55%,
-    #030303 80.03%,
-    #000000 100%
-  );
-  transform: rotate(180deg);
-  z-index: 1000;
-}
+
 .rounded-button {
   width: 60px;
   height: 60px;

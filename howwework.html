@@ -60,6 +60,39 @@
 window.addEventListener("scroll", reveal);
     </script>
 <style>
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.black-text{
+    color: black;
+}
+
     *{
         margin: 0;
         overflow-x: hidden;
@@ -312,7 +345,7 @@ padding:4px 4px;
          
         }
         .vertical {
-            border-left: 6px dotted rgb(231, 231, 231);
+            border-left: 6px dotted rgb(0, 0, 0);
             height: 150px;
             position:absolute;
             left: 50%;
@@ -331,7 +364,7 @@ padding:4px 4px;
 </style>
 <body>
       <!-- navbar -->
-      <nav class="navbar navbar-light bg-dark ">
+      <nav class="navbar navbar-light bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html" style="color: white;"><img src="./assets/img/func.png" width="30px"
                     height="30px" style="font-family: 'Montserrat', sans-serif;
@@ -387,24 +420,27 @@ padding:4px 4px;
     </nav>
 
 
-    <div class="heading"  style="font-family: 'Open Sans';">
-        How we work
-    </div>
-  
-<div class="desc" style="text-align: center;font-family: 'Open Sans';">
-    <hr>
-   <h4  style="overflow-y: hidden;"> Licht up your life with us; let f(Licht) make your dream a sustainable reality!</h4>
-<p>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter" style="overflow-y: hidden; font-size: 36px;"> How We Work </h3>
+          </div>
+        </div>
+      </div>
+<div class="desc" style=" background-color: rgb(255, 255, 255); color: black;  text-align: center;font-family: 'Open Sans';">
+   <h4 class="black-text"  style="overflow-y: hidden;"> Licht up your life with us; let f(Licht) make your dream a sustainable reality!</h4>
+<p class="black-text">
 In f(Licht), everyone religiously pursues a simple philosophy: Be minimalist in requirements, and maximalist in performance. The CEO herself strongly vouches for making the lighting solution viable to help everyone decorate their home with lighting environments that allow us to feel the interplay between light and architecture in all its diversity. We put enormous emphasis on providing a personalized solution so that the clients get the best value for every penny invested in the project. 
 </p>
 </div>
-    <div class="images-container" style="   overflow-y: hidden;">
+    <div class="images-container" style="background-color: #fff;  overflow-y: hidden;">
    
         <div class="set-1 row reveal" style="overflow-y: hidden; margin-top: 100px;">
             <img class="img-1" src="how we work page\how we work images\1-removebg-preview (1).png">
             <div class="text-container" style="font-family: 'Open Sans';">
-                <h2 style="overflow-y: hidden;">1.SEED STAGE</h2>
-                <p>To pave the way toward
+                <h2 class="black-text" style="overflow-y: hidden;">1.SEED STAGE</h2>
+                <p class="black-text">To pave the way toward
                     an optimal solution that is
                     in accord with our client's
                     dream without threatening
@@ -417,11 +453,11 @@ In f(Licht), everyone religiously pursues a simple philosophy: Be minimalist in 
             <div class = "vertical reveal" style="position:relative; top: 10px; right: 10vh; overflow-y: hidden;"></div>
            
         </div>
-        <div class="set-2 row reveal">
+        <div class="set-2 row reveal" style="background-color: #fff;">
             <img class="img-1"src="how we work page\how we work images\2-removebg-preview (1).png">
             <div class="text-container"  style="font-family: 'Open Sans';">
-                <h2  style="overflow-y: hidden;">2. GERMINATION STAGE</h2>
-                <p>Upon understanding the
+                <h2 class="black-text"  style="overflow-y: hidden;">2. GERMINATION STAGE</h2>
+                <p class="black-text">Upon understanding the
                     client's requirements, the
                     design team conducts a REVERSE BRAINSTORMING to
                     develop a digital lighting
@@ -434,11 +470,11 @@ In f(Licht), everyone religiously pursues a simple philosophy: Be minimalist in 
             <div class = "vertical reveal" style="position:relative; top: 10px; right: 10vh; overflow-y: hidden;"></div>
         </div>
 
-        <div class="set-3 row reveal">
+        <div class="set-3 row reveal" style="background-color: #fff;">
             <img class="img-1" src="how we work page\how we work images\3-removebg-preview (1).png">
             <div class="text-container"  style="font-family: 'Open Sans';">
-                <h2  style="overflow-y: hidden;">SEEDLING STAGE</h2>
-                <p>
+                <h2 class="black-text" style="overflow-y: hidden;">SEEDLING STAGE</h2>
+                <p class="black-text" >
                     Upon the client's approval, a
 A thorough search is made to
 find out or develop
@@ -453,11 +489,11 @@ optimality.
             <div class = "vertical reveal" style="position:relative; top: 10px; right: 10vh; overflow-y: hidden;"></div>
         </div>
 
-        <div class="set-4 row reveal">
+        <div class="set-4 row reveal" style="background-color: #fff;">
             <img class="img-1" src="how we work page\how we work images\PLANTATION-removebg-preview (1).png">
             <div class="text-container"  style="font-family: 'Open Sans';">
-                <h2  style="overflow-y: hidden;">PLANTATION STAGE</h2>
-                <p>In this final stage, a detailed blueprint is
+                <h2 class="black-text" style="overflow-y: hidden;">PLANTATION STAGE</h2>
+                <p class="black-text" >In this final stage, a detailed blueprint is
                     provided for installation (on-demand
                     installation service is also available).
                     Periodic on-site physical surveying,
@@ -469,11 +505,11 @@ optimality.
             </div>
             <div class = "vertical reveal" style="position:relative; top: 10px; right: 10vh; overflow-y: hidden;"></div>
         </div>
-        <div class="set-5 row reveal">
+        <div class="set-5 row reveal" style="background-color: #fff;">
             <img  class="img-1" src="how we work page\how we work images\unnamed__1_-removebg-preview (1).png">
             <div class="text-container"  style="font-family: 'Open Sans';">
-                <h2  style="overflow-y: hidden;">RIPENING STAGE</h2>
-                <p>Client dream project is
+                <h2 class="black-text" style="overflow-y: hidden;">RIPENING STAGE</h2>
+                <p class="black-text" >Client dream project is
                     ready. F(Licht) once again
                     stand tall to its
                     commitment and bring
@@ -483,11 +519,11 @@ optimality.
             </div>
             <div class = "vertical reveal" style="position:relative; top: 10px; right: 10vh; overflow-y: hidden;"></div>
         </div>
-        <div class="set-6 row reveal">
+        <div class="set-6 row reveal" style="background-color: #fff;">
             <img  class="img-1" src="how we work page\how we work images\5-removebg-preview (1).png">
             <div class="text-container"  style="font-family: 'Open Sans';">
-                <h2 style="overflow-y: hidden;">NOURISHING STAGE</h2>
-                <p>The client starts enjoying the
+                <h2 class="black-text" style="overflow-y: hidden;">NOURISHING STAGE</h2>
+                <p class="black-text">The client starts enjoying the
                     finished projects, but f(Licht)
                     always stays in touch with the
                     clients, not because f(Licht) is
