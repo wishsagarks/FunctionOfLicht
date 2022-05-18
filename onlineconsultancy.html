@@ -7,6 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/img/fol.ico" type="image/icon" sizes="16x16">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&family=Open+Sans:wght@300&family=Roboto+Condensed:ital@1&family=Roboto+Mono:wght@300;400&family=Rubik+Glitch&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="onlineconsultancy.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,6 +47,24 @@
     j.src = u + "/whatsapp-widget.min.js?_=" + Math.random();
     h.parentNode.insertBefore(j, h);
     })(window, document, "script", "https://waw.gallabox.com");
+
+
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
     </script>
 
 <body>
@@ -99,25 +125,176 @@
     </nav>
     </div>
 
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter"> Online Consultancy </h3>
+          </div>
+        </div>
 
 
-    <div class="white d-flex align-items-center justify-content-center">
-
+            <p class="reveal fade-1 space">
+                <span style="font-family:Roboto Condensed;">
+            You want to redesign your space, rejuvenate your lighting and thereby lifestyle with f(Licht), yeah that is one of the best discussion you have taken! And now, nothing can stop us from working together to give your dream a shape. Even if you cannot arrange a site visit for our team, there is no need to worry! Although a site visit is essential, just like a physical inspection of a doctor of his patient.  However, online consultancy is as effective and as good as telemedicine! We will stay connected with you throughout the project and after its completion. We will provide all the design ideas, and through video conferencing, we will also assess the progress of your project and suggest necessary measures whenever it is required.
+                </span>
+            </p>
+        <img class="reveal img "  src="assets\img\OnlineConsultancy\OnlineConsultancy.jpeg" alt="services cycle" />
       
-                <div class="container">
-                    <div class="row row-content align-items-center ">
-                        <div class="col-sm-4 order-sm-last col-md-3 flex-last">
-                            <img src="./assets/img/b5.jpeg" height="50%" width="100%">
-                        </div>
-                        <div class="col-sm col-md flex-first">
-                            <h2>Light</h2>
-                            <p class="hidden-xs-down">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut officiis libero suscipit veritatis fugiat! Nisi laudantium, atque illum voluptate dolore unde sequi alias at! Sequi adipisci unde voluptatum quas aspernatur.</p>
-                        </div>
+
+            <p class="reveal fade-1 space">
+                <span style="font-family:Roboto Condensed;">
+                    Our remote lighting consultation allows you to meet with our expert designers remotely. You and your designer will discuss your needs and vision for light. You will receive a custom design with recommendations tailored to your unique property and preferences and a bid. The method can be installed at once or in phases if you need the installation and commissions under our supervision.
+                </span>
+            </p>
+
+            <p class="reveal fade-1" style="    font-size: 20px; margin-top: 3px; margin-bottom: 4vh;">
+                <span style="font-family:Roboto Condensed;">
+                    We offer three different types of consultancy packages. For your keen understanding, you can get a clear idea from the following table: 
+                </span>
+            </p>
+
+
+            <table class="image-shadow reveal">
+                <thead>
+                  <tr>
+                    <th scope="col">Services</th>
+                    <th scope="col">Design Concept Consultancy</th>
+                    <th scope="col">Complete Online Consultancy</th>
+                    <th scope="col">Premium  Consultancy</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color:#000" scope="row">Client’s requirement Understanding</th>
+                    <td  data-label="Design Concept Consultancy" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                    <td data-label="Eminent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                    <td data-label="Congruent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                   
+                  </tr>
+                  <tr>
+                    <td style="color:#000" scope="row">Personalised Design Concept</th>
+                    <td  data-label="Pre-Eminent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></i>
+                    <td data-label="Eminent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></i>
+                    <td data-label="Congruent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></i>
+                 
+                  </tr>
+                  <tr>
+                    <td style="color:#000" scope="row">Number of Revisions on Initial Proposed Design </th>
+                      <td  data-label="Pre-Eminent" >2</td>
+                      <td data-label="Eminent" >3</td>
+                      <td data-label="Congruent" >4</td>
+                      
+                  </tr>
+                  <tr>
+                    <td style="color:#000" scope="row">Number of design discussion and clarification sessions </th>
+                      <td  data-label="Pre-Eminent" >2</td>
+                      <td data-label="Eminent" >2</td>
+                      <td data-label="Congruent" >2</td>
+                      
+                  </tr>
+                  <tr>
+                    <td style="color:#000" scope="row">Video conferencing during critical installation</th>
+                    <td  data-label="Pre-Eminent" ><i style="color:red;" class="large material-icons">clear</i></td>
+                    <td data-label="Eminent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                    <td data-label="Congruent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                   
+                  </tr>
+                  <tr>
+                    <td style="color:#000" scope="row">Commissioning of the project</th>
+                    <td  data-label="Pre-Eminent" ><i style="color:red;" class="large material-icons">clear</i></td>
+                    <td data-label="Eminent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                    <td data-label="Congruent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                   
+                  </tr>
+                  
+                  <tr>
+                    <td style="color:#000" scope="row">Physical Site visit during critical installation* </th>
+                    <td  data-label="Pre-Eminent" ><i style="color:red;" class="large material-icons">clear</i></td>
+                    <td data-label="Eminent" ><i style="color:red;" class="large material-icons">clear</i></td>
+                    <td data-label="Congruent" ><span style="color:darkgreen;"><i class="large material-icons">check</i></span></td>
+                   
+                  </tr>
+                  
+                </tbody>
+              </table>
+
+              <p class="reveal" style="    font-size: 20px; margin-top: 13vh; margin-bottom: 2vh; text-align: center;">
+                <span style="font-family:Roboto Condensed;">
+                    Complete the form below to request your consultation. We look forward to working with you!
+                </span>
+            </p>
+
+            <div class="container reveal" style="margin-bottom:5vh;">
+                <div class="columns">
+                  <div class="column col-auto col-mx-auto">
+                      <div class="form-group">
+              <form target="_self"
+                    id="bootstrapForm"
+                    method="POST">
+                  <fieldset>
+                      <h2>Contact Form</h2>
+                  </fieldset>
+                  
+                  <fieldset>
+                      <legend for="name">Name</legend>
+                      <div class="form-group">
+                          <input id="Name" type="text" name="entry.1248082634" class="form-control" required>
+                      </div>
+                  </fieldset>
+                  
+                  <fieldset>
+                  
+                  <fieldset>
+                      <legend for="email">Email</legend>
+                      <div class="form-group">
+                          <input id="Email" type="text" name="entry.1896829488" class="form-control" required>
+                      </div>
+                  </fieldset>
+                  
+                  <fieldset>
+                      <legend for="contactno">Contact No.</legend>
+                      <div class="form-group">
+                          <input id="Contact No" type="text" name="entry.950221048" class="form-control" required>
+                      </div>
+                  </fieldset>
+                  
+                  <fieldset>
+                      <legend for="address">Address</legend>
+                      <div class="form-group">
+                          <textarea id="Address" name="entry.138512886" class="form-control" required></textarea>
+                      </div>
+                  </fieldset>
+                  
+                  <fieldset>
+                      <legend for="state">State</legend>
+                      <div class="form-group">
+                          <textarea id="State" name="entry.1895304209" class="form-control" required></textarea>
+                      </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend for="state">How did you hear about us?</legend>
+                    <div class="form-group">
+                        <textarea id="Msg-1" name="entry.1895304209" class="form-control" required></textarea>
                     </div>
-
-
-                </div>
-            </div>
+                </fieldset>
+                <fieldset>
+                    <legend for="state">Your message</legend>
+                    <div class="form-group">
+                        <textarea id="Msg-2" name="entry.1895304209" class="form-control" required></textarea>
+                    </div>
+                </fieldset>
+                  <input type="hidden" name="fvv" value="1">
+                  <input type="hidden" name="fbzx" value="8081235427209087729">
+                  
+                  <input type="hidden" name="pageHistory" value="0">
+              
+                  <input class="btn btn-primary" type="submit" value="Submit">
+              </form>
+              </div>
+              </div>
+              </div>
+              </div>
+              
         </div>
     </div>
 
@@ -189,6 +366,21 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+<script>
+$('#bootstrapForm').submit(function (event) {
+    event.preventDefault()
+    var extraData = {}
+    $('#bootstrapForm').ajaxSubmit({
+        data: extraData,
+        dataType: 'jsonp',
+        error: function () {
+            alert('Form Submitted. Thanks.')
+        }
+    })
+})
+</script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
