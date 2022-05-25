@@ -5,10 +5,10 @@ var pageIndicator = document.getElementById('page')
 var galleryDots = document.getElementById('gallery-dots');
 
 var images= [];
-for (var i = 1; i < 32; i++) {
+for (var i = 1; i < 40; i++) {
   images.push({
-    title:(i),
-    source: "assets/img/landing/"+i+".webp",
+    title:(''),
+    source: "assets/img/gallery/"+i+".webp",
   });
 }
 
