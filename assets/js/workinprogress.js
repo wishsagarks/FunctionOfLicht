@@ -5,14 +5,14 @@ var pageIndicator = document.getElementById('page')
 var galleryDots = document.getElementById('gallery-dots');
 
 var images= [];
-for (var i = 1; i < 37; i++) {
+for (var i = 2; i <= 54; i++) {
   images.push({
     title:(''),
-    source: "assets/img/gallery/"+i+".webp",
+    source: "assets/img/workINProgress/"+i+".webp",
   });
 }
 
-var perPage = 36;
+var perPage = 51;
 var page = 1;
 var pages = Math.ceil(images.length / perPage)
 
