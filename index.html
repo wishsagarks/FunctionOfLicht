@@ -65,6 +65,10 @@
     opacity: 0.8;
 } 
 
+
+
+
+
 </style>
 
 <script>
@@ -216,7 +220,7 @@
   <div id="cover">
     <div id="wraper">
          <div class="images">
-          <div class="lazy" id="bg-image-div" style="display: block;z-index:-20;transition:0.7s ease-in"></div>
+          <div class="lazy" id="bg-image-div" style="display: block;z-index:-20;transition:0.7s ease-in;"></div>
           </div>
     </div>
    
@@ -299,7 +303,24 @@
       i = 0;
     }
     document.getElementById('bg-image-div').style.backgroundImage = 'url(' + images[i++] + ')';
-  }
+   
+   
+// query for mobile open
+
+var width = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+if(width <= 440)
+{
+
+  document.getElementById('bg-image-div').style.backgroundSize = "auto width";
+
+}
+
+// closes   
+
+}
 
   setInterval( backgroundChanger, 3000);
 </script>
