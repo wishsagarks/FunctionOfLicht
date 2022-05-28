@@ -5,14 +5,14 @@ var pageIndicator = document.getElementById('page')
 var galleryDots = document.getElementById('gallery-dots');
 
 var images= [];
-for (var i = 1; i < 40; i++) {
+for (var i = 2; i <= 54; i++) {
   images.push({
     title:(''),
-    source: "assets/img/gallery/"+i+".webp",
+    source: "assets/img/workINProgress/"+i+".webp",
   });
 }
 
-var perPage = 8;
+var perPage = 51;
 var page = 1;
 var pages = Math.ceil(images.length / perPage)
 
@@ -37,31 +37,11 @@ for (var i = 0; i < pages; i++){
   galleryDots.appendChild(dot)
 }
 
-// Previous Button
-previous.addEventListener('click', function() {
-  if (page === 1) {
-    page = 1;
-  } else {
-    page--;
-    showImages();
-  }
-})
 
-// Next Button
-next.addEventListener('click', function() {
-  if (page < pages) {
-    page++;
-    showImages();
-  }
-})
 
-// Jump to page
-function goToPage(index) {
-  index = parseInt(index);
-  page =  index + 1;
-  
-  showImages();
-}
+
+
+
 
 // Load images
 function showImages() {
@@ -109,9 +89,6 @@ function showImages() {
       item.classList.add('animate');
     }
   }
-  
-  // Update page indicator
-  pageIndicator.textContent = "Page " + page + " of " + pages;
   
 }
 

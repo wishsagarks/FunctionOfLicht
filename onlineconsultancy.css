@@ -23,8 +23,9 @@ body{
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-      font-size: 90px;
+      font-size: 80px;
       font-family: 'Montserrat', sans-serif;  
+      margin-bottom: 70px;
 
 }
 
@@ -36,6 +37,7 @@ body{
 
 
 .fade-1 {
+  padding: 60px 20px;
   font-family: 'Montserrat', sans-serif;  
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -51,6 +53,7 @@ body{
     opacity: 0;
     transition: .8s all ease;
     padding: 0 12%;
+    
     
   }
    p.reveal{
@@ -183,9 +186,15 @@ text-transform: uppercase;
       border-bottom: 0;
     }
   }
+
+
+  /* */
   @media screen and (max-width:415px) {
     .animate-charcter{
-      font-size: 48px;
+      font-size: 42px;
+    }
+    .fade-1{
+      padding:13px;
     }
   .img{
    

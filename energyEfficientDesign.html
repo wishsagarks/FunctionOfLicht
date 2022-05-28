@@ -14,7 +14,7 @@
     <title>Function of Licht</title>
 
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="assets/css/phase-2.css">
 
 </head>
 
@@ -61,6 +61,9 @@ window.addEventListener("scroll", reveal);
     </script>
 
 <style>
+    body{
+        overflow-x: hidden;
+    }
 .animate-charcter
 {
    text-transform: uppercase;
@@ -147,6 +150,17 @@ window.addEventListener("scroll", reveal);
   transform: translateY(0);
   opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+/* mobile view */
     @media screen and (max-width: 480px){
         .reveal{
   position: relative;
@@ -163,7 +177,7 @@ window.addEventListener("scroll", reveal);
     left: -5px;
 }
         .main-wrapper{
-            padding:60px;
+            padding:60px 25px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -201,69 +215,142 @@ window.addEventListener("scroll", reveal);
         .animate-charcter{
             font-size: 60px;
            position: relative;
-           right: 28px;
         }
-        
+        .title-2{
+            font-size: 40px;
+            font-weight: bolder;
+            line-height: 55px;
+        }
+
+        p.size{
+    font-size: 30px;
+    
+}
+
     }
 </style>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-light bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html" style="color: white;"><img src="./assets/img/func.png" width="30px"
-                    height="30px" style="font-family: 'Montserrat', sans-serif;
-                    font-family: 'Poppins', sans-serif;padding-left: 3px;padding-right: 5px;">Function of Licht</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
-                   <img src="./assets/img/nAV/bulb.gif" height="40rem" width="50rem" style="margin-right: 0.5rem;">
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Function of Licht</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+    <div class="totalcontent">
+        <div class="indexing">
+          <nav class="navbar navbar-dark bg-dark " style="opacity: 80%;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html" style="color: white;"><img src="./assets/img/func.png" width="90px" height="50px"
+                  style="font-family: 'Montserrat', sans-serif;
+                        font-family: 'Poppins', sans-serif;padding-left: -3px;padding-right: 8px;">Function of Licht</a>
+        <div class="insidewrap">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+          <div class="container-fluid" >
+        <div class="insidenav" style="color:black;">
+            <div class="collapse navbar-collapse" id="navbarScroll" >
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" style="color: white;font-weight: bolder;opacity: 1;">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./designprinciple.html"  style="color: white;font-weight: bolder;opacity: 1;">Design principle</a>
+                </li>
+          
+                <li class="nav-item">
+                  <a class="nav-link" href="./workinprogress.html" style="color: white;font-weight: bolder;opacity: 1;">Work in Progress</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="howwework.html" style="color: white;font-weight: bolder;opacity: 1;">How we Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html"style="color:white;font-weight: bolder;opacity: 1;">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="onlineconsultancy.html"style="color:white;font-weight: bolder;opacity: 1;">Online Consultancy</a>
+                </li>
+                <div style="align-items:flex-end;flex-direction:row;display:flex;">
+        
+                    <li class="nav-item position">
+                      <a class="nav-link" href="services.html"style="color: white;font-weight: bolder;opacity: 1;"><span style="color:white;"><i class="fa-brands fa-linkedin"></i></span></a>
+                    </li>
+                    <li class="nav-item position">
+                      <a class="nav-link" href="services.html"style="color: white;font-weight: bolder;opacity: 1;"><span style="color:white;"><i class="fa-brands fa-facebook"></i></span></a>
+                    </li>
+                    <li class="nav-item position">
+                      <a class="nav-link" href="services.html"style="color: white;font-weight: bolder;opacity: 1;"><span style="color:white;"><i class="fa-brands fa-instagram"></i></span></a>
+                    </li>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./designprinciple.html">Design principle</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./workinprogress.html">Work in Progress</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./howwework.html">How we Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="onlineconsultancy.html">Online Consultancy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="comingsoon.html">News Feed</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="diy.html">DIY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contactus.html">Contact Us</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+                
+              </ul>
             </div>
+          </div>
+          </div>
+        </nav>
         </div>
-    </nav>
-
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <!-- <ion-icon name="reorder-three-outline" color="light" size="large"></ion-icon> -->
+                
+                <img src="./assets/img/nAV/bulb.gif" height="32rem" width="32rem" style="margin-right: 0.5rem;">
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Function of Licht</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" >
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                     <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"style="color: black; >Home</a>
+                    </li> 
+                    <li class="nav-item">
+                      <a class="nav-link" href="./designprinciple.html" style="color: black;">Design principle</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./workinprogress.html" style="color: black;">Work in Progress</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="howwework.html" style="color: black;">How we Work</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="services.html" style="color: black;">Services</a>
+        
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="onlineconsultancy.html" style="color: black;">Online Consultancy</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="comingsoon.html" style="color: black;">News Feed</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="diy.html" style="color: black;">DIY</a>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contactus.html" style="color: black;">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./gallery.html" style="color: black;">Gallery</a>
+                    </li>
+                    <div style="align-items:flex-end;flex-direction:row;display:flex;">
+                    
+                      <li class="nav-item">
+                        <a class="nav-link" href="services.html"style="color: white; font-weight: bolder; opacity: 1;"><span style="color:black;"><i class="fa-brands fa-linkedin"></i></span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="services.html"style="color: white;font-weight: bolder; margin-left:3vh; opacity: 1;"><span style="color:black;"><i class="fa-brands fa-facebook"></i></span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="services.html"style="color: white;margin-left:3vh; font-weight: bolder;opacity: 1;"><span style="color:black;"><i class="fa-brands fa-instagram"></i></span></a>
+                      </li>
+                    </div>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        </div>
 
     <!-- <div class="div1">
 
@@ -274,7 +361,7 @@ window.addEventListener("scroll", reveal);
         <div class="container">
             <div class="row">
               <div class="col-md-12 text-center">
-                <h3 class="animate-charcter">Enery Efficient Design</h3>
+                <h3 class="animate-charcter">Energy Efficient Design</h3>
               </div>
             </div>
           </div> 
@@ -282,29 +369,30 @@ window.addEventListener("scroll", reveal);
                         document.body.getElementsByClassName('container-title').click();
 
         </script> -->
-
-        <p class="reveal" style="text-align: left; margin-top:40px; font-family: 'Open Sans';">It is not sufficient to observe earth day on 22<sup>nd</sup> April and act quite an
+<!-- 1st Paragraph-->
+        <p class="reveal size" style="text-align: left;   font-size: 1.5rem;
+        margin-top:40px; font-family: 'Open Sans';">It is not sufficient to observe earth day on 22<sup>nd</sup> April and act quite an
             oblivion on the rest of 364 days! And mind you, today's wastage is
             tomorrow's shortage.</p>
-            <p class="p-2 reveal" style="text-align: left;font-family: 'Open Sans'; position: relative; right: 11vh;">Even the dopiest person too will raise his eyebrows if the monthly electricity
-
+            <!-- 2nd Paragraph-->
+            <p class=" reveal size" style="text-align: left;font-size: 1.5rem;font-family: 'Open Sans'; position: relative;">Even the dopiest person too will raise his eyebrows if the monthly electricity
                 consumption increases by 5%.</p>
-
-
-                <p class="reveal"style="text-align: left; margin-top:40px; font-family: 'Open Sans';">Who can address your concerns about energy better than someone who has already been
+                <!-- 3rd Paragraph-->
+                <p class="reveal size"style="text-align: left;font-size: 1.5rem; font-family: 'Open Sans';">Who can address your concerns about energy better than someone who has already been
                     subscribed to the ideology of A Minimalist by Requirements, A maximalist by performance!</p>
-            <h1 class="container-title reveal" style="text-decoration: none;margin-top:40px; font-weight: 400;">Modus Operandi</h1>
-            <p class="reveal" style="font-family: 'Open Sans';margin-top:40px; ">In f(Licht) it is our goal to provide a COMPLETE 360&#176 CUSTOMIZED Solution to Every Individual without threatening their pockets</p>
+                    <!-- Image-Paragraph-->
+            <h1 class="container-title reveal title-2" style="text-decoration: none;margin-top:60px; font-weight: 600;">Modus Operandi</h1>
+            <p class="reveal size" style="font-family: 'Open Sans'; padding: 60px 0px ;font-size: 1.5rem; text-align: left;">In f(Licht) it is our goal to provide a COMPLETE 360&#176 CUSTOMIZED Solution to Every Individual without threatening their pockets</p>
             <div class="images-container reveal" style="overflow-y: hidden;">
                 <div>
                     <img class="main-image" src="assets/img/designPrinciple/Energy Efficient.webp" />
                 </div>
-                <div class="video-container reveal" style="overflow-y: hidden;">
-                    <video muted  id="myVideo" class="abc" controls width="450">
+                <div class="video-container reveal" style="overflow-y: hidden; padding: 60px 0px;">
+                    <video muted autoplay loop   class="abc" controls width="450">
                         <source src="assets/video/designPrinciple/Power saving 1.mp4"  >
 
                     </video> 
-                    <video muted id="myssVideo" class="def" controls width="450" style="margin-top: 30px;">
+                    <video muted autoplay loop  class="def" controls width="450" style="margin-top: 30px;">
                         
                         <source src="assets/video/designPrinciple/Power Saving 2.mp4"  >
                     </video> 
@@ -313,14 +401,11 @@ window.addEventListener("scroll", reveal);
                 </div>
             </div>
 
-            <p class="reveal" style="text-align: center; margin-top:40px;">We can work hand in hand with the architect from the beginning and suggest the best possible way your architect should do the design to make your dream a reality! Starting from suitable amelioration of the architectural design to find out the best lighting brand and also the best power electronics driver to give you the best output.<br><br>
-
-                Nonetheless, come late, come right, even if your architect has already handed you the project, still, there is no need to give up your hope. Since you have shown the patience to navigate till this point, let us assure you that to provide the best plausible design without threatening your solvency is now our responsibility!<br><br>
-                
-                In a nutshell, invest in obtaining the proper lighting solution for once, get rid of unhealthy atmosphere and raging electricity bill for the lifetime.
+            <p class="reveal size" style="text-align: left; margin-top:10px;font-size: 1.5rem; ">We can work hand in hand with the architect from the beginning and suggest the best possible way your architect should do the design to make your dream a reality! Starting from suitable amelioration of the architectural design to find out the best lighting brand and also the best power electronics driver to give you the best output.
+                Nonetheless, come late, come right, even if your architect has already handed you the project, still, there is no need to give up your hope. Since you have shown the patience to navigate till this point, let us assure you that to provide the best plausible design without threatening your solvency is now our responsibility!
             </p>
     </div>
-    <button onclick="myFunction()">Toggle dark mode</button>
+   
     <footer class="footer-distributed">
         <div class="footer-left">
             <img src="./assets/img/func.png">
@@ -328,11 +413,10 @@ window.addEventListener("scroll", reveal);
                 <a href="./index.html" class="link-1">Home</a>
                 <a href="./designprinciple.html">Design Principle</a>
                 <a href="./workinprogress.html">Work in Progress</a>
-                <a href="./comingsoon.html">How we work</a>
+                <a href="./howwework.html">How we work</a>
                 <a href="./services.html">Services</a>
                 <a href="./onlineconsultancy.html">Online Consultancy</a>
-                <a href="./comingsoon.html">News Feed</a>
-                <a href="./diy.html">DIY</a>
+            
                 <a href="./contactus.html">Contact us</a>
             </p>
             <p class="footer-company-name">Function of Licht © 2022</p>
@@ -340,7 +424,7 @@ window.addEventListener("scroll", reveal);
         <div class="footer-center">
             <div>
                 <i class="fa fa-map-marker"></i>
-                <p><span>24/6,Abinash banerjee lane</span> shibpur,Howrah-711104</p>
+                <p><span>24/6,Abinash banerjee lane</span>shibpur,Howrah-711104</p>
             </div>
             <div>
                 <i class="fa fa-phone"></i>
@@ -354,8 +438,8 @@ window.addEventListener("scroll", reveal);
         <div class="footer-right">
             <p class="footer-company-about">
                 <span>About the company</span>
-                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
-                vehicula sit amet.
+                f(Licht), with its head office located in Kolkata, provides lighting design and space consultation services across Globe to ensure an affordable personalised solution through synergy of buzzing a la mode technologies!
+
             </p>
             <div class="footer-icons">
                 <a href="https://www.facebook.com/Function-of-Licht-110936584761183/" target="_blank"><i
@@ -372,99 +456,7 @@ window.addEventListener("scroll", reveal);
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
-<script>
-    console.log(window.innerWidth)
-    // const vid=document.getElementById('myVideo')
-    // vid.muted=true;
-    // const vid2=document.getElementById('myssVideo')
-    // vid2.muted=true;
-    // vid.addEventListener('ended',()=>{
-    //     vid2.play();
-    // })
-    // vid2.addEventListener('ended',()=>{
-    //     vid.play();
-    // })
-    // vid.play();
-
-    var videos = document.getElementsByTagName("video");
-    console.log('vidlen',videos.length)
-
-    function checkScroll() {
-        var fraction = 0.8; // Play when 80% of the player is visible.
-        // document.body.getElementsByClassName('container-title').click();
 
 
-        for(var i = 0; i < videos.length; i++) {
-
-            var video = videos[i];
-
-            var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
-                b = y + h, //bottom
-                visibleX, visibleY, visible;
-
-                visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
-                visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
-
-                visible = visibleX * visibleY / (w * h);
-                console.log('visible',visible)
-                if (visible > fraction) {
-                    video.play();
-                } else {
-                    video.pause();
-                }
-
-        }
-
-    }
-
-    window.addEventListener('scroll', checkScroll, false);
-    window.addEventListener('resize', checkScroll, false);
-</script>
-<script>
-    // const videos=document.body.querySelectorAll('video')
-    // console.log(videos) 
-    // document.body.getElementById("vid1").play();
-    // // videos[0].play;
-    // if(videos[0].played.length==videos[0].length) videos[1].play();
-// 
-    // function playVideoSequentially(){
-    //     console.log('aaa')
-    //     const videos=document.body.getElementsByTagName('video')
-    //     while(true){
-    //             videos[0].autoplay=true;
-    //             if(videos[0].played.length==videos[0].length) {
-    //                 videos[0].pause();
-    //                 videos[1].play();
-
-    //     }
-    //     }}
-    //     // playVideoSequentially();
-    //     console.log(document.body.querySelector('vid1>video').length);
-
-        console.log(document.body.getElementsByClassName('abc'))
-
-        // document.body.getElementsByClassName('abc')[0].setAttribute('autoplay muted',true);
-
-
-//    var count=1;
-//    var player=document.getElementById('myVideo');
-//    var mp4Vid = document.getElementById('mp4Source');
-//    player.addEventListener('ended',myHandler,false);
-
-//    function myHandler(e)
-//    {
-
-//       if(!e) 
-//       {
-//          e = window.event; 
-//       }
-//       count++;
-//       $(mp4Vid).attr('src', "assets/video/designPrinciple/Power Saving "+count+".mp4");
-//       player.load();
-//       player.play();
-//    }
-
-
-</script>
 
 </html>

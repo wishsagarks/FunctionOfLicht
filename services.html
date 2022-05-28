@@ -118,7 +118,11 @@ span:nth-child(1) {
   }
 }
 
-
+.image-width{
+  width:50%;height:30rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 
 .animate-charcter
@@ -155,7 +159,7 @@ span:nth-child(1) {
             border-left: 6px dotted rgb(0, 0, 0);
             height: 150px;
             position:relative;
-            left: 10px;
+            left: 10rem;
             margin-bottom: 60px;
         }
 .reveal{
@@ -206,7 +210,9 @@ span:nth-child(1) {
       
   }
 }
-  
+  .margin_4vh{
+    margin-bottom: 4vh;
+  }
     td{
         color:#fff;
     }
@@ -316,17 +322,32 @@ table th {
     border-bottom: 0;
   }
 }
+
+/*
+mobile view
+*/
 @media screen and (max-width:415px) {
   .animate-charcter{
     font-size: 48px;
   }
+  .image-width{
+  width:100%;height:20rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.services-wrapper{
+  padding: -10px;
+}
+.vertical{
+  position: relative;
+  left: 35px;
 
+}
   .text-container{
         margin-left:20px;
         width:100%;
         position: relative;
         line-height: 1.5;
-        padding: 0 15%;
       left: 0%
     }
     .left-Pos{
@@ -342,63 +363,127 @@ table th {
 
   
     <!-- navbar -->
-    <nav class="navbar navbar-light bg-black">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html" style="color: white;"><img src="./assets/img/func.png" width="30px"
-                    height="30px" style="font-family: 'Montserrat', sans-serif;
-                    font-family: 'Poppins', sans-serif;padding-left: 3px;padding-right: 5px;">Function of Licht</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
-                   <img src="./assets/img/nAV/bulb.gif" height="40rem" width="50rem" style="margin-right: 0.5rem;">
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Function of Licht</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./designprinciple.html">Design principle</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./workinprogress.html">Work in Progress</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="comingsoon.html">How we Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="onlineconsultancy.html">Online Consultancy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="comingsoon.html">News Feed</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="diy.html">DIY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contactus.html">Contact Us</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
+    <div class="totalcontent">
+      <div class="indexing">
+        <nav class="navbar navbar-dark bg-dark " style="opacity: 80%;">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html" style="color: white;"><img src="./assets/img/func.png" width="90px" height="50px"
+                style="font-family: 'Montserrat', sans-serif;
+                      font-family: 'Poppins', sans-serif;padding-left: -3px;padding-right: 8px;">Function of Licht</a>
+      <div class="insidewrap">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid" >
+      <div class="insidenav" style="color:black;">
+          <div class="collapse navbar-collapse" id="navbarScroll" >
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white;font-weight: bolder;opacity: 1;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./designprinciple.html"  style="color: white;font-weight: bolder;opacity: 1;">Design principle</a>
+              </li>
+        
+              <li class="nav-item">
+                <a class="nav-link" href="./workinprogress.html" style="color: white;font-weight: bolder;opacity: 1;">Work in Progress</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="howwework.html" style="color: white;font-weight: bolder;opacity: 1;">How we Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html"style="color:white;font-weight: bolder;opacity: 1;">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="onlineconsultancy.html"style="color:white;font-weight: bolder;opacity: 1;">Online Consultancy</a>
+              </li>
+              <div style="align-items:flex-end;flex-direction:row;display:flex;">
+      
+                  <li class="nav-item position">
+                    <a class="nav-link" href="services.html"style="color: white;font-weight: bolder;opacity: 1;"><span style="color:white;"><i class="fa-brands fa-linkedin"></i></span></a>
+                  </li>
+                  <li class="nav-item position">
+                    <a class="nav-link" href="services.html"style="color: white;font-weight: bolder;opacity: 1;"><span style="color:white;"><i class="fa-brands fa-facebook"></i></span></a>
+                  </li>
+                  <li class="nav-item position">
+                    <a class="nav-link" href="services.html"style="color: white;font-weight: bolder;opacity: 1;"><span style="color:white;"><i class="fa-brands fa-instagram"></i></span></a>
+                  </li>
+              </div>
+              
+            </ul>
+          </div>
         </div>
-    </nav>
+        </div>
+      </nav>
+      </div>
+      
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <!-- <ion-icon name="reorder-three-outline" color="light" size="large"></ion-icon> -->
+              
+              <img src="./assets/img/nAV/bulb.gif" height="32rem" width="32rem" style="margin-right: 0.5rem;">
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Function of Licht</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body" >
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                   <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"style="color: black; >Home</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="./designprinciple.html" style="color: black;">Design principle</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./workinprogress.html" style="color: black;">Work in Progress</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="howwework.html" style="color: black;">How we Work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html" style="color: black;">Services</a>
+      
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="onlineconsultancy.html" style="color: black;">Online Consultancy</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="comingsoon.html" style="color: black;">News Feed</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="diy.html" style="color: black;">DIY</a>
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contactus.html" style="color: black;">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./gallery.html" style="color: black;">Gallery</a>
+                  </li>
+                  <div style="align-items:flex-end;flex-direction:row;display:flex;">
+                  
+                    <li class="nav-item">
+                      <a class="nav-link" href="services.html"style="color: white; font-weight: bolder; opacity: 1;"><span style="color:black;"><i class="fa-brands fa-linkedin"></i></span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="services.html"style="color: white;font-weight: bolder; margin-left:3vh; opacity: 1;"><span style="color:black;"><i class="fa-brands fa-facebook"></i></span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="services.html"style="color: white;margin-left:3vh; font-weight: bolder;opacity: 1;"><span style="color:black;"><i class="fa-brands fa-instagram"></i></span></a>
+                    </li>
+                  </div>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      </div>
 
-
-    <div class="services-wrapper" style="font-family:Roboto Condensed; padding:50px; overflow-y: hidden; background-color: rgb(255, 255, 255); color: #000;">
+    <div class="services-wrapper" style="font-family:Roboto Condensed; padding: 10px; overflow-y: hidden; background-color: rgb(255, 255, 255); color: #000;">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -408,7 +493,7 @@ table th {
       </div> 
      <!-- <h2  class="area " style="margin:30px; ">Services</h2>-->
        
-        <p class="reveal fade-1">
+        <p class="reveal fade-1 margin_4vh">
           <span style="font-family:Roboto Condensed;">
             Before you run over this page to determine the package price to compare, spend a
             few seconds and consider our work ethics! In f(Licht), we promote personalised
@@ -417,7 +502,7 @@ table th {
             whether it would serve you or not! What! Are you concerned with solvency! No way!
           </span> 
           </p>
-            <p class=" reveal">
+            <p class=" reveal margin_4vh">
             In f(Licht), our sole objective is to make the lighting solution viable to help everyone
             decorate their home with lighting environments that allow us to feel the interplay
             between light and architecture in all its diversity. With the combined use of luminaires
@@ -426,15 +511,15 @@ table th {
             exerted by the illumination. In addition, we will surely provide a personalised solution
             that would help you cut down your electricity bill by at least 13%.
           </p>
-        <p class=" reveal">
+        <p class=" reveal margin_4vh">
             Just have a look on the composition of our team, and you will get the confidence that
             why should you try your lighting project luck with f(Licht). Our team comprises
             experienced industry personnel, illustrious academicians, active market surveyors.
             On top of that, we have a robust network with like-minded people. As Warren Buffet
             rightly said, “your network is your net worth,” We rely on that.
         </p>
-        <img class="reveal  col-lg-12 mx-auto"  src="assets/img/services/Services Team.webp" style="width:50%;height:30rem;margin:3%;" alt="services cycle" />
-        <p class=" reveal">
+        <img class="reveal  col-lg-12 image-width"  src="assets/img/services/Services Team.webp" alt="services cycle" />
+        <p class=" reveal margin_4vh">
             Well! Well! So now an obvious question that must haunt you: Why are the different
             packages there? The answer is simple: <span style="text-decoration:underline;">time is money!</span> More time we invest in your
             project, you will experience a tangible difference! And as you know time is money,
@@ -442,8 +527,8 @@ table th {
             objectivity and clarity, just have a glance of our packages.
         </p>
         <div class="text-container">
-        <p class=" reveal">
-            <span class="sub-heading-text" style="font-weight:bold;">The Pre-Eminent:</span>
+        <p class="reveal margin_4vh">
+            <span class="sub-heading-text " style="font-weight:bold;">The Pre-Eminent:</span>
             As the name implies it is the package, which allows f(Licht) to operate with the
             maximum degree of freedom, and thereby we can ensure the best personalized
             design for you. This package is best suited when you are planning for a fresh setup,
@@ -468,7 +553,7 @@ table th {
             nutshell, this is a 360 0 package, go for it when you are about to start a fresh project
             and don’t want any headache afterwards.
           </p>
-        <p class=" reveal">
+        <p class=" reveal margin_4vh">
            <span class="sub-heading-text" style="font-weight:bold;">The Eminent:</span>
             It is always better to be in the nick of time than to barn the door after the horse has
             bolted!
@@ -486,7 +571,7 @@ table th {
 
         </p>
         
-        <p class=" reveal">
+        <p class=" reveal margin_4vh">
            <span class="sub-heading-text" style="font-weight:bold;  margin-top: 10vh;">The Congruent:</span>
             As the name implies, it is a pack quite similar to what normally client's expect from
             their lighting designer. However, just like the previous two packages, we will also do
@@ -506,7 +591,7 @@ table th {
             pollution. Although the package name is 'The Congruent', once you take the service,
             you will understand how noncongruent it is!
         </p>
-        <p class=" reveal" style="margin-top: 10vh;">
+        <p class="reveal margin_4vh" style="margin-top: 10vh;">
            <span class="sub-heading-text" style="font-weight:bold;">The Decent: </span>
             The handiest and speedy package that we offer from our side. It is exceptionally
             suitable if you are looking for a quick solution to your lighting design issues. We will
@@ -517,7 +602,7 @@ table th {
         </p>
       </div>
     
-        <div class = "vertical reveal" style="position:relative; top: 10px; right: 10vh; overflow-y: hidden;"></div>
+        <div class = "vertical reveal" style=" overflow-y: hidden;"></div>
        
         <div >
            
@@ -630,11 +715,10 @@ table th {
                 <a href="./index.html" class="link-1">Home</a>
                 <a href="./designprinciple.html">Design Principle</a>
                 <a href="./workinprogress.html">Work in Progress</a>
-                <a href="./comingsoon.html">How we work</a>
+                <a href="howwework.html">How we work</a>
                 <a href="./services.html">Services</a>
                 <a href="./onlineconsultancy.html">Online Consultancy</a>
-                <a href="./comingsoon.html">News Feed</a>
-                <a href="./diy.html">DIY</a>
+             
                 <a href="./contactus.html">Contact us</a>
             </p>
             <p class="footer-company-name">Function of Licht © 2022</p>
@@ -656,8 +740,8 @@ table th {
         <div class="footer-right">
             <p class="footer-company-about">
                 <span>About the company</span>
-                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
-                vehicula sit amet.
+                f(Licht), with its head office located in Kolkata, provides lighting design and space consultation services across Globe to ensure an affordable personalised solution through synergy of buzzing a la mode technologies!
+
             </p>
             <div class="footer-icons">
                 <a href="https://www.facebook.com/Function-of-Licht-110936584761183/" target="_blank"><i
