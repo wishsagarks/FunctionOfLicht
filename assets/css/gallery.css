@@ -20,10 +20,11 @@ body {
 
 .images {
   width: 100%;
-  margin: 0 auto;
+  margin-left: 2vh;
+ padding-right: 10vh;
   height: 100%;
   display: grid;
-  grid-gap: 7.5px;
+  grid-gap: 12px;
   grid-template-columns: 50% 50%;
 }
 
@@ -117,4 +118,17 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   align-items: start;
+}
+
+
+@media (max-width: 440px) {
+  .images {
+    width: 100%;
+    margin-left: 2vh;
+   padding-right: 6vh;
+    height: 100%;
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: 50% 50%;
+  }
 }
