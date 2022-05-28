@@ -281,6 +281,7 @@
 
 <script>
   var i = 0;
+var j=8;
 
   var images = [
       'assets/img/landing/21.webp',
@@ -290,11 +291,20 @@
       'assets/img/landing/30.webp',
       'assets/img/landing/6.webp',
       'assets/img/landing/7.webp',
-      'assets/img/landing/8.webp'
+      'assets/img/landing/8.webp',
+      'assets/img/landing/A 12-A 16.webp',
+      'assets/img/landing/A10.webp',
+      'assets/img/landing/A19.webp',
+      'assets/img/landing/A41.webp',
+      'assets/img/landing/A44-A46.webp',
+      'assets/img/landing/A45.webp',
+      'assets/img/landing/A51.webp',
+      'assets/img/landing/A54.webp',
+      'assets/img/landing/A58.webp'
   ];
 
   function backgroundChanger() {
-    if(i >= images.length){
+    if(i > 7 ){
       i = 0;
     }
     document.getElementById('bg-image-div').style.backgroundImage = 'url(' + images[i++] + ')';
@@ -309,8 +319,11 @@ var width = window.innerWidth
 if(width <= 440)
 {
 
-  document.getElementById('bg-image-div').style.backgroundSize = "auto width";
-
+if(j>images.length)
+{
+j=8;
+}
+  document.getElementById('bg-image-div').style.backgroundImage = 'url(' + images[j++] + ')';
 }
 
 // closes   
