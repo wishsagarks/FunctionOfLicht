@@ -282,7 +282,7 @@
 
 <script>
   var i = 0;
-var j=8;
+var j=9;
 
   var images = [
       'assets/img/landing/21.webp',
@@ -301,11 +301,12 @@ var j=8;
       'assets/img/landing/A45.webp',
       'assets/img/landing/A51.webp',
       'assets/img/landing/A54.webp',
-      'assets/img/landing/A58.webp'
+      'assets/img/landing/A58.webp',
+      'assets/img/landing/a45after.webp'
   ];
 
   function backgroundChanger() {
-    if(i > 7 ){
+    if(i > 8 ){
       i = 0;
     }
     document.getElementById('bg-image-div').style.backgroundImage = 'url(' + images[i++] + ')';
