@@ -2,7 +2,7 @@ html, body{
     margin:0px;
     padding:0px;
   }
-  #cover #wraper .images>div {
+  /* #cover #wraper .images>div {
     background: center/cover;
     display: block;
     background-image: url('https://www.foscarini.com/wp-content/uploads/2020/01/hp-day-min.jpg');
@@ -13,7 +13,7 @@ html, body{
     -ms-transition: opacity 1.5s ease;
     -o-transition: opacity 1.5s ease;
     z-index: 0;
-  }
+  } */
 
 
   
