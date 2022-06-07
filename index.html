@@ -17,6 +17,11 @@
 </head>
 
 <style>
+
+body{
+  background-image: url('assets/img/landing/21.webp');
+}
+
   .nav-link{
     color:black;
   }
@@ -256,36 +261,10 @@
   
 </footer>
 <script>
-
-  setInterval(() => {
-      d = new Date(); //object of date()
-      hr = d.getHours();
-      min = d.getMinutes();
-      sec = d.getSeconds();
-      hr_rotation = 30 * hr + min / 2; //converting current time
-      min_rotation = 6 * min;
-      sec_rotation = 6 * sec;
-    
-      hour.style.transform = `rotate(${hr_rotation}deg)`;
-      minute.style.transform = `rotate(${min_rotation}deg)`;
-      second.style.transform = `rotate(${sec_rotation}deg)`;
-  }, 1000)
-  </script>
-
-<!-- <div style="z-index:999; position:absolute;bottom:2%;display:flex;flex-direction: column;">
-  <div style="display:flex;align-items: center;justify-content: center;">
-    
-  
-
-
-</div> -->
-
-<script>
   var i = 0;
 var j=9;
 
   var images = [
-      'assets/img/landing/21.webp',
       'assets/img/landing/23.webp',
       'assets/img/landing/25.webp',
       'assets/img/landing/32.webp',
@@ -293,6 +272,7 @@ var j=9;
       'assets/img/landing/6.webp',
       'assets/img/landing/7.webp',
       'assets/img/landing/8.webp',
+      'assets/img/landing/21.webp',
       'assets/img/landing/A 12-A 16.webp',
       'assets/img/landing/A10.webp',
       'assets/img/landing/A19.webp',
@@ -334,6 +314,32 @@ j=8;
 
   setInterval( backgroundChanger, 8000);
 </script>
+<script>
+
+  setInterval(() => {
+      d = new Date(); //object of date()
+      hr = d.getHours();
+      min = d.getMinutes();
+      sec = d.getSeconds();
+      hr_rotation = 30 * hr + min / 2; //converting current time
+      min_rotation = 6 * min;
+      sec_rotation = 6 * sec;
+    
+      hour.style.transform = `rotate(${hr_rotation}deg)`;
+      minute.style.transform = `rotate(${min_rotation}deg)`;
+      second.style.transform = `rotate(${sec_rotation}deg)`;
+  }, 1000)
+  </script>
+
+<!-- <div style="z-index:999; position:absolute;bottom:2%;display:flex;flex-direction: column;">
+  <div style="display:flex;align-items: center;justify-content: center;">
+    
+  
+
+
+</div> -->
+
+
 </body>
 <!-- scripts -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
