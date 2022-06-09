@@ -17,8 +17,14 @@ html, body{
 
 
   
-
-
+.lazy{
+  display: block;
+  z-index:-20;
+  transition:all 0.7s ease-in;
+}
+#bg-image-div{
+  background-size: cover;
+}
    #cover #wraper .images>div{
     top: 0;
     left: 0;
