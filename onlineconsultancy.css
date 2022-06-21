@@ -193,6 +193,11 @@ text-transform: uppercase;
     .animate-charcter{
       font-size: 42px;
     }
+
+    .font-size-mobile{
+      font-size: 18px;
+    }
+
     .fade-1{
       padding:13px;
     }
