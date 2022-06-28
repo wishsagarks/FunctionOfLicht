@@ -72,7 +72,16 @@ body{
   body{
     background-color: black;
   }
-
+  .position-mob{
+    position: relative;
+    left: 20%;
+  }
+  .pos-download{
+  position: relative;
+  left: 84%;
+  bottom: 74px;
+  z-index: 100;
+}
   
   .image-2{
   background-image: url(assets/img/landing/A19.webp);
@@ -120,6 +129,13 @@ body{
 .margin-footer{
   position: relative;
   top: 660px;
+}
+
+.pos-download{
+  position: relative;
+  left: 47%;
+  bottom: 74px;
+  z-index: 100;
 }
 
 
@@ -331,10 +347,12 @@ body{
     <div class="swiper-slide image-7"></div>
     <div class="swiper-slide image-8"></div>
   </div>
+  
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
   <div class="swiper-pagination"></div>
 </div>
+<a name="" id="" class="btn btn-primary pos-download" href="assets/pdf/f(Licht)-Design Story.pdf" download role="button"><i class="fa fa-download" aria-hidden="true"></i></a>
 <!-- bgimage -->
     <!-- <div class="baapbox">
   <div id="cover">
@@ -360,7 +378,7 @@ body{
       <div id="minute"></div>
       <div id="second"></div>
     </div>
-    <div class="hide" style="font-weight: bold;font-size:1.3rem;margin-left:30px;text-align: center;color:white; position: relative; top: 50px;">
+    <div class="hide position-mob" style="z-index: 100;font-weight: bold;font-size:1.3rem;margin-left:30px;text-align: center;color:white; position: relative; top: 50px;">
       Kolkata<br>
       INDIA
     </div>
